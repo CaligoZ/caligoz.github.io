@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        网络安全理论｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2017/12/25/网络安全理论/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>网络安全理论</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2017-12-25
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#课程笔记"
+                           title="课程笔记">课程笔记</a>
+                        
+                        <a class="tag" href="/tags/#信息安全"
+                           title="信息安全">信息安全</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            网络安全理论
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h2 id="网络安全理论技术"><a href="#网络安全理论技术" class="headerlink" title="网络安全理论技术"></a>网络安全理论技术</h2><h3 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h3><h3 id="Chapter2"><a href="#Chapter2" class="headerlink" title="Chapter2"></a>Chapter2</h3><h3 id="Chapter3"><a href="#Chapter3" class="headerlink" title="Chapter3"></a>Chapter3</h3><h4 id="两大类：流密码与分组密码"><a href="#两大类：流密码与分组密码" class="headerlink" title="两大类：流密码与分组密码"></a>两大类：流密码与分组密码</h4><blockquote>
+<p>流密码：每次加密<strong>数据流</strong>的一位或一个字节</p>
+<p>分组密码：将一个明文组作为<strong>整体加密</strong>且<strong>通常</strong>得到的是<strong>与之等长的密文组</strong></p>
+</blockquote>
+<h5 id="理想分组密码体制"><a href="#理想分组密码体制" class="headerlink" title="理想分组密码体制"></a>理想分组密码体制</h5><ul>
+<li>${2}^{n}!$个映射</li>
+<li>大规模</li>
+</ul>
+<h5 id="Feistel密码结构——用于分组密码的一种对称结构"><a href="#Feistel密码结构——用于分组密码的一种对称结构" class="headerlink" title="Feistel密码结构——用于分组密码的一种对称结构"></a>Feistel密码结构——用于分组密码的一种对称结构</h5><blockquote>
+<p>由于它是对称的密码结构，所以对信息的加密和解密的过程就极为相似，甚至完全一样。</p>
+<p>这就使得在实施的过程中，对编码量和线路传输的要求就减少了几乎一半。</p>
+</blockquote>
+<ul>
+<li><p>设计动机</p>
+<ul>
+<li>需要对应较大n分理想分组密码体制的一种近似体制</li>
+<li>它可以在容易实现的部件上逐步建立起来</li>
+</ul>
+</li>
+<li><p>密钥长为k位，分组长为n位，采用${2}^{k}$个变换</p>
+</li>
+<li><p>建议交替使用代换和置换</p>
+</li>
+<li><p>目的：挫败基于统计方法的密码分析</p>
+<ul>
+<li><strong><u>混淆（confusion）</u></strong>：使得密文的统计特性与密钥的取值之间的关系尽量复杂<ul>
+<li>使得对手即使获取了关于密文的一些统计特性，也无法推测密钥。</li>
+<li>使用<strong>复杂的非线性代替变换</strong>可以达到比较好的混淆效果，而<strong>简单的线性代替变换</strong>得到的混淆效果则不理想。</li>
+<li>可以用”揉面团”来形象地比喻扩散和混淆．当然，这个”揉面团”的过程应该是<strong>可逆</strong>的。</li>
+<li><strong>乘积和迭代</strong>有助于实现扩散和混淆。<ul>
+<li>选择某些较简单的受密钥控制的密码变换，通过乘积和迭代可以取得比较好的扩散和混淆的效果</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><u>扩散（diffusion）</u></strong>：明文的统计特征消散在密文中，使得明文和密文之间的统计关系尽量复杂。<ul>
+<li>例如e的分布 ➡️对应多种加密结果（操作是多重移位）➡️看不出统计特性</li>
+<li>正规解释：<ul>
+<li>扩散就是让明文中的每一位影响密文中的许多位，或者说让密文中的每一位受明文中的许多位的影响。</li>
+<li>这样可以隐蔽明文的统计特性。</li>
+<li>理想的情况是让明文中的每一位影响密文中的所有位，或者说让密文中的每一位受明文中所有位的影响。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>pps：扩散(diffusion)和混淆(confusion)是C．E．Shannon提出的设计密码体制的两种基本方法，其目的是为了对手从密文的统计特性推测明文或密钥。<em>扩散和混淆是现代分组密码的设计基础。</em></li>
+</ul>
+</li>
+<li><p>具体实现</p>
+<p>依赖于以下参数特征：</p>
+<ul>
+<li><p><strong>分组长度</strong> ➡️ 每个分组的明文长度</p>
+<ul>
+<li>大的块会提高加密的安全性，但是会降低加密、解密的速度。截止至2013年，比较流行的这种方案是64 bit。而128 bit 的使用也比较广泛。</li>
+</ul>
+</li>
+<li><p><strong>密钥长度</strong> ➡️ key的长度，子密钥长度之和</p>
+<ul>
+<li>同上。现在流行的是64 bit ，而 128 bit 正逐渐成为主流。</li>
+</ul>
+</li>
+<li><p><strong>循环次数／轮数</strong> ➡️ 经过几次轮函数的操作</p>
+<ul>
+<li>每多进行一轮循环，安全性就会有所提高。现阶段比较流行的是16轮。</li>
+</ul>
+</li>
+<li><p><strong>子密钥生成算法</strong> ➡️ 子密钥是对应每个轮操作的key</p>
+<ul>
+<li>生成算法越复杂，则会使得密码被破译的难度增强，即，信息会越安全。</li>
+</ul>
+</li>
+<li><p><strong>轮函数</strong> ➡️对每轮都做这个函数操作</p>
+<ul>
+<li>轮函数越复杂，则安全性越高。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>设计Feistel密码的考虑 <ul>
+<li><strong>快速</strong>软件加解密</li>
+<li>易于分析</li>
+</ul>
+</li>
+</ul>
+<h5 id="数据加密标准DES"><a href="#数据加密标准DES" class="headerlink" title="数据加密标准DES"></a>数据加密标准DES</h5><blockquote>
+<p>第一个并且是最重要的现代分组密码算法</p>
+</blockquote>
+<ul>
+<li><p>历史（1970年代）</p>
+<ul>
+<li><p>IBM Lucifer 1971-1972</p>
+</li>
+<li><p>标准化 1975年3月公开发表</p>
+<p>​</p>
+</li>
+</ul>
+</li>
+<li><p>概述</p>
+<ul>
+<li>DES是一种用56位密钥来加密64位数据的方法。</li>
+</ul>
+<p><img src="/Users/Caligo/Desktop/屏幕快照 2017-09-30 上午1.53.00.png" alt="屏幕快照 2017-09-30 上午1.53.00"></p>
+<blockquote>
+<p>IP是初始置换 initial permutation的缩写</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Note:</div><div class="line">&gt; 初始置换与初始逆置换是互逆的</div><div class="line">&gt; 严格而言不具有加密的意义</div><div class="line">&gt; DES中其它算法都是线性的，而S-盒运算则是非线性的</div><div class="line">&gt; 提供了密码算法所必须的混乱作用</div><div class="line">&gt; S-盒不易于分析，它提供了更好的安全性</div><div class="line">&gt; S-盒的设计未公开</div></pre></td></tr></table></figure>
+<p><img src="/2017/12/25/网络安全理论/des-i.png" alt="des-i"></p>
+<blockquote>
+<p>DES第i轮迭代加密</p>
+</blockquote>
+<p><img src="/2017/12/25/网络安全理论/f function.png" alt="f function"></p>
+<blockquote>
+<p>F函数</p>
+<p>Expansion E-box：扩展E置换（E-盒）</p>
+<ul>
+<li>这个内部没有说 具体在ppt03-22 边上两侧，中间是4*8-01-32的矩阵。</li>
+</ul>
+<p>S-Boxes：8个S盒</p>
+<ul>
+<li>S-盒是DES加密算法的唯一非线性部件 </li>
+<li>输入48bit-输出32bit（6byte-4byte)</li>
+</ul>
+<p>Straight P-box：直接P置换</p>
+<ul>
+<li>也是一个直接的4*8矩阵 无规则</li>
+</ul>
+</blockquote>
+<p><img src="/2017/12/25/网络安全理论/s盒内部.png" alt="s盒内部"></p>
+<blockquote>
+<p>S盒子内部</p>
+<ul>
+<li>黄色部分是输入的中间4byte决定行</li>
+<li>绿色部分是输入的两侧2byte决定列</li>
+</ul>
+</blockquote>
+
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/04/22/PRD产品需求文档的书写规范/" data-toggle="tooltip" data-placement="top"
+                           title="PRD产品需求文档的书写规范">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/07/22/搭建hexo遇到的一些坑/" data-toggle="tooltip" data-placement="top"
+                           title="搭建hexo遇到的一些坑">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全理论技术"><span class="toc-text">网络安全理论技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter1"><span class="toc-text">Chapter1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter2"><span class="toc-text">Chapter2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter3"><span class="toc-text">Chapter3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#两大类：流密码与分组密码"><span class="toc-text">两大类：流密码与分组密码</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#理想分组密码体制"><span class="toc-text">理想分组密码体制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Feistel密码结构——用于分组密码的一种对称结构"><span class="toc-text">Feistel密码结构——用于分组密码的一种对称结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据加密标准DES"><span class="toc-text">数据加密标准DES</span></a></li></ol></li></ol></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#课程笔记"
+                           title="课程笔记">课程笔记</a>
+                        
+                        <a class="tag" href="/tags/#信息安全"
+                           title="信息安全">信息安全</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

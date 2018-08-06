@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+" data-ishome = "true" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+
+<style>
+
+    .custom-haojen-container .post-preview:nth-of-type(1),
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        text-align: center;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        background-size: cover;
+        padding: 0;
+        height: 300px;
+        display: table;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    /*去掉诗歌的背景图片*/
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        background-image: none !important;
+        background-color: rgba(255, 248, 220, 0.5);
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) h2,
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta,
+    .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+        text-shadow: 0 0 40px rgba(0, 0, 0, 1);
+        letter-spacing: 1px;
+        color: #fff;
+        margin-top: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta {
+        font-size: .9em;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-child(1) .post-subtitle {
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-family: unset;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .75)
+    }
+
+    /*不显示摘要*/
+    .custom-haojen-container .post-preview:nth-child(1) .post-content-preview {
+        display: none
+    }
+
+    /*只第一个显示背景图片*/
+    .custom-haojen-container .post-preview:not(:nth-child(1)) {
+        background-image: none !important;
+    }
+
+    /*第一个分界线去掉*/
+    .custom-haojen-container hr:nth-of-type(1) {
+        display: none;
+    }
+
+    /*主题*/
+    .custom-haojen-container .post-preview:nth-of-type(1) > a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /*诗词标题*/
+    .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+        font-size: 35px;
+        font-family: STKaiti;
+        color: rgba(0, 0, 0, .8);
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) .post-meta {
+        color: #0e2231;
+    }
+
+    @media (max-width: 768px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 240px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 28px !important;
+            margin-top: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-of-type(1) > a {
+            padding: 20px
+        }
+    }
+
+    /*手机屏幕*/
+    @media (max-width: 400px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 195px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 20px !important;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 16px;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) a {
+            padding: 30px 20px;
+        }
+    }
+</style>
+
+<!-- Page Header -->
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
+    <div class="row">
+        <header class="intro-header">
+            <div class="container">
+                <div class="site-heading text-center">
+                    <div class="about-me">
+                        <!--移动端头部显示-->
+                        <img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg"/>
+                        <h5><a href="/about/">Caligo</a></h5>
+                        <p>一只雾匣子</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<!-- Main Content -->
+<div class="container custom-haojen-container">
+    <!-- Post Container -->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+            <!-- Main Content -->
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/08/06/[阅读手札]ToB产品设计迷思用户篇/">
+        <h2 class="post-title">
+            阅读手札-ToB产品设计迷思用户篇
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-08-06
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                开头
+​    我们在 To B 产品设计的实际工作中，对设计价值观中的“正直”保持得不够好：为我们产品买单的是店铺老板，但实际使用者多数是基层员工，店铺老板追求效率，追求投入产出比，那我们的产品就很难顾及店铺的基层员工的操作体验，都是以保证产品性能稳定为第一目标去做设计，多数时候这样设计导致实..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/08/06/[阅读手札]B2BvsB2C网站关键用户体验差异/">
+        <h2 class="post-title">
+            阅读手札-B2BvsB2C网站关键用户体验差异
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-08-06
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                关键词表明优势 信息整合 用户和顾客的不同需求 定价策略 不同需求不同规模的客户团队
+相似点：B2B网站和B2C的电商网站有很多共同点：
+
+他们都需要建立一个清晰的信息架构
+
+包含引人注目的内容
+
+提供他们关心的产品或服务的细节
+
+并拥有简单易懂的交互。
+本质上，几乎所有在B2C网站上适用的用户..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/05/21/有道云笔记产品分析/">
+        <h2 class="post-title">
+            有道云笔记产品分析
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-05-21
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                
+ 演示文稿导出图片 清晰度1600*900 加载会比较慢
+如果这篇拙劣的作品有幸被您眷顾，您怀着期待好奇结果却是不流畅的阅读体验造成今日您的心情down了N个百分点。
+作者给您鞠躬致歉了🙇‍♀️
+
+前言
+
+
+产品概述
+
+需求分析
+
+
+
+
+产品分析
+
+
+
+
+分析建议
+
+
+
+
+
+
+
+
+
+总结
+结..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/05/19/云闪付产品分析/">
+        <h2 class="post-title">
+            云闪付产品分析
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-05-19
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                1 产品概述1.1 体验环境体验版本：5.1.0
+体验设备：iPhone 6s
+iOS版本：11.2
+体验时间：2018.5
+体验者：Caligo
+1.2 产品概括首先云闪付既是中国银联旗下支付应用的名称，也是中国银联推出的一种以以智能手机为基础，基于NFC（近场通讯）、HCE（基于主卡的卡模拟..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/04/28/《增长黑客》读书笔记/">
+        <h2 class="post-title">
+            《增长黑客》读书笔记
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-04-28
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                《增长黑客》 读书笔记置入总的思维导图
+ch1hotmail的故事
+web端 1996.7.4上线
+在每封由hotmail发送的邮件末尾签名处增加附言：“我爱你，快来Hotmail申请你的免费邮箱”
+类推：探探 app  “有一个通讯录好友标记了暗恋你“心动女友 qq空间 “好友XXX等X人也在..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/04/26/产品运营常用指标/">
+        <h2 class="post-title">
+            产品运营常用指标
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-04-26
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                产品运营常用指标
+抽卡游戏中可爱的老公老婆们被产品经理推着拉升了ARPPU，在分手前挣到了足够发奖金的LTV（冷漠脸
+
+网页页面浏览量 (PV)一定统计周期内（通常是24小时）所有访问者浏览的页面总数
+该指标重复计算：一个访问者浏览同一页面3次，那么PV就计算为3个
+“收视率”
+独立访问者 (U..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/04/24/《杰出产品经理》读书笔记/">
+        <h2 class="post-title">
+            《杰出产品经理》读书笔记
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-04-24
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                #《杰出产品经理》读书笔记
+ch1 全方位认识产品经理定义互联网产品经理负责互联网产品的规划与设计、以及互联网产品生命周期的管理
+工作市场分析：研究用户需求产品策划：明确用户群体和使用场景产品设计：梳理和细化产品需求，设计产品架构和功能，定义产品体验和价值产品文档：从立项到正式上线过程中的各种需..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')">
+    <a href="/2018/04/22/《独角兽之路》读书笔记/">
+        <h2 class="post-title">
+            《独角兽之路》读书笔记
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2018-04-22
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                
+三节课 《独角兽之路》的读书笔记总结，直接在xmind导出的html，格式就先不管啦，主要是对思维导图的一些补充，重点在图哇😘
+迭代分析
+第一阶段一般是上线（可能之前）的探索阶段，没有开始大力推广运营，标志是下载量曲线比较平滑
+
+关键版本分析
+
+用户评价
+
+
+主要是从用户评价（特别是差评）来..
+            </p>
+        </div>
+    </a>
+
+</div>
+
+<hr>
+
+
+
+
+<!-- 翻页 pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page/2/">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+
+
+        </div>
+        <!-- Sidebar Container -->
+        <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+
+            <!-- About Me -->
+            <section class="visible-md visible-lg" style="padding: 0 18px">
+                <div class="short-about">
+                    <!--侧边栏头像-->
+                    
+                    <img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg"/>
+                    
+                    <h5><a href="/about/">Caligo</a></h5>
+                    
+                    <p>一只雾匣子</p>
+                    
+                    <hr>
+                    <!-- SNS Link 社交 -->
+                    <ul class="list-inline">
+                        
+                        
+                        
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li>
+                            <a target="_blank" href="https://github.com/CaligoZ">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                        </span>
+                            </a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Featured Tags  标签 -->
+            
+            <section>
+                <div class="tags">
+                    
+                    
+                    
+                    
+                    <a href="/tags/#ToB" title="ToB"
+                       rel="2">ToB</a>
+                    
+                    
+                    
+                    <a href="/tags/#阅读手札" title="阅读手札"
+                       rel="2">阅读手札</a>
+                    
+                    
+                    
+                    
+                    
+                    <a href="/tags/#产品" title="产品"
+                       rel="7">产品</a>
+                    
+                    
+                    
+                    
+                    
+                    <a href="/tags/#阅读" title="阅读"
+                       rel="3">阅读</a>
+                    
+                    
+                    
+                    <a href="/tags/#运营" title="运营"
+                       rel="3">运营</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </section>
+            
+
+            
+            <hr>
+            <h5 style="text-align: center;">Friends</h5>
+            <ul class="list-inline" style="text-align: center;">
+                
+                <li><a href="http://blog.xieldy.cn" target="_blank">Xieldy</a></li>
+                
+                <li><a href="http://barriery.cn" target="_blank">Barriery</a></li>
+                
+                <li><a href="http://a2chitect.cn" target="_blank">Architect</a></li>
+                
+                <li><a href="http://www.k0rz3n.com" target="_blank">K0rz3n</a></li>
+                
+                <li><a href="http://www.math1as.com" target="_blank">Math1as</a></li>
+                
+            </ul>
+            
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

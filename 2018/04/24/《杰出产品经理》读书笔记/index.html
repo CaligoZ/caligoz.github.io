@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        《杰出产品经理》读书笔记｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2018/04/24/《杰出产品经理》读书笔记/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>《杰出产品经理》读书笔记</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2018-04-24
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#阅读"
+                           title="阅读">阅读</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            《杰出产品经理》读书笔记
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>#《杰出产品经理》读书笔记</p>
+<h2 id="ch1-全方位认识产品经理"><a href="#ch1-全方位认识产品经理" class="headerlink" title="ch1 全方位认识产品经理"></a>ch1 全方位认识产品经理</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>互联网产品经理负责互联网产品的规划与设计、以及互联网产品生命周期的管理</p>
+<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>市场分析：研究用户需求<br>产品策划：明确用户群体和使用场景<br>产品设计：梳理和细化产品需求，设计产品架构和功能，定义产品体验和价值<br>产品文档：从立项到正式上线过程中的各种需求、帮助和说明<br>需求实现：沟通和协调团队<br>迭代优化：收集、反馈、挖掘新需求</p>
+<h2 id="ch2-自我学习与修养"><a href="#ch2-自我学习与修养" class="headerlink" title="ch2 自我学习与修养"></a>ch2 自我学习与修养</h2><p>工作心态</p>
+<p>挖掘性思考：原型里需要体现的比如<em>SEO</em>、用户体验-&gt;有专门的职位，但是也要了解</p>
+<blockquote>
+<p>SEO：  </p>
+</blockquote>
+<h3 id="学习建议"><a href="#学习建议" class="headerlink" title="学习建议"></a>学习建议</h3><p>电子商务的不同产品形态和模式</p>
+<blockquote>
+<p>B2B  </p>
+<p>C2C  </p>
+<p>B2B2C  </p>
+<p>O2O  </p>
+<p>B2C  </p>
+</blockquote>
+<h3 id="获取产品的途径"><a href="#获取产品的途径" class="headerlink" title="获取产品的途径"></a>获取产品的途径</h3><p>Web产品：创业媒体的产品库-36Kr、Next、Product Hunt<br>App产品：应用商城 - 坚持每天玩一个产品，分析和体验他的业务逻辑和交互体验</p>
+<h2 id="ch3-市场分析"><a href="#ch3-市场分析" class="headerlink" title="ch3 市场分析"></a>ch3 市场分析</h2><h3 id="用户分析"><a href="#用户分析" class="headerlink" title="用户分析"></a>用户分析</h3><ul>
+<li>画像分析<ul>
+<li>公司的UED博客有不少案例</li>
+<li>数据来源：行业报告、调研数据、访谈记录、产品统计工具（web/app）-CNZZ、友盟</li>
+<li>基本属性与行为动态<ul>
+<li>基本属性：性别年龄终端学历行业领域生活偏好</li>
+<li>行为动态：来源、受访内容、热点、特定时间、活跃频率</li>
+</ul>
+</li>
+<li>全网画像与垂直领域画像</li>
+<li>定义用户：名称、角色的目标与动机、差异化的特征、描述角色</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>垂直：  </p>
+</blockquote>
+<ul>
+<li>行为分析<ul>
+<li>用户行为</li>
+</ul>
+</li>
+<li>诉求分析<ul>
+<li>需求画像<ul>
+<li>描述、用户群体、使用场景、现在的解决方案、市场反馈、新的解决方案</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="竞品分析"><a href="#竞品分析" class="headerlink" title="竞品分析"></a>竞品分析</h3><blockquote>
+<p>5W1H<br>What - 对象 - 功能<br>Why - 目的 - 解决什么问题<br>Where - 场所 - 使用场景<br>When - 时间 - 何时使用，使用时间<br>Who - 用户 - 用户群<br>How - 手段 - 什么样的解决方案  </p>
+</blockquote>
+<h3 id="市场分析总结"><a href="#市场分析总结" class="headerlink" title="市场分析总结"></a>市场分析总结</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">* 不要把相关性当作因果性</div></pre></td></tr></table></figure>
+<h2 id="ch4-产品策划"><a href="#ch4-产品策划" class="headerlink" title="ch4 产品策划"></a>ch4 产品策划</h2><p>基于市场分析的结果，针对用户群体的需求、以细分市场为基础，形成一个产品开发的整体思路</p>
+<h3 id="工作内容"><a href="#工作内容" class="headerlink" title="工作内容"></a>工作内容</h3><p>构思和规划产品的定位，明确用户群体和使用场景</p>
+<ol>
+<li>获取需求</li>
+<li>分析需求</li>
+<li>决策需求</li>
+</ol>
+<h3 id="考虑因素"><a href="#考虑因素" class="headerlink" title="考虑因素"></a>考虑因素</h3><h4 id="战略方向"><a href="#战略方向" class="headerlink" title="战略方向"></a>战略方向</h4><ol>
+<li>起步阶段</li>
+<li>发展阶段</li>
+<li>迭代阶段</li>
+</ol>
+<blockquote>
+<p>项目管理 - 战略分阶段 - 阶段分版本  </p>
+<p>偏向市场和公司  </p>
+</blockquote>
+<h4 id="产品定位"><a href="#产品定位" class="headerlink" title="产品定位"></a>产品定位</h4><blockquote>
+<p>偏向功能定义  </p>
+</blockquote>
+<h4 id="用户需求"><a href="#用户需求" class="headerlink" title="用户需求"></a>用户需求</h4><ol>
+<li>真正的需求 - 对“假期了，不知道去哪儿玩”的解构</li>
+<li>产品形态与本质 - “行李箱“不要单纯看作行李箱 - 用户出行要携带的物品 - 范围更广大</li>
+</ol>
+<h3 id="明确条件"><a href="#明确条件" class="headerlink" title="明确条件"></a>明确条件</h3><blockquote>
+<p>MRD：市场需求文档  </p>
+</blockquote>
+<ol>
+<li>明确市场定位</li>
+<li>明确用户群体</li>
+<li>明确使用场景</li>
+</ol>
+<p><img src="/2018/04/24/《杰出产品经理》读书笔记/IMG_0044.JPG" alt="">产品策划公式</p>
+<p>内容结构：</p>
+<blockquote>
+<p>BRD：商业需求描述  </p>
+<p>MRD：市场需求文档  </p>
+<p>PRD：产品需求文档  </p>
+<p>一般载体最好为PPT，也有word的</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&gt; p84一份《好评找房》策划方案 - 2012</div><div class="line">&gt;</div><div class="line">&gt; ？产品模式的成熟与否如何看待</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="ch5-产品设计"><a href="#ch5-产品设计" class="headerlink" title="ch5 产品设计"></a>ch5 产品设计</h2><p>架构设计、原型设计与体验设计<br><em>产品需求文档PRD：记录具体的需求说明</em></p>
+<h3 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h3><p>产品的五层结构图</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">表现层：视觉、交互</div><div class="line">框架层：导航、频道、页面、模块</div><div class="line">业务层：业务模型-算法公式与功能流程</div><div class="line">数据层：数据元素、数据关系：集合、线性、树形、图形</div><div class="line">系统层：产品模式、产品形态</div></pre></td></tr></table></figure>
+<p><em>架构设计的过程中，数据结构的知识尤其重要，至少要看懂数据字典</em></p>
+<h3 id="产品公式"><a href="#产品公式" class="headerlink" title="产品公式"></a>产品公式</h3><h4 id="产品形态"><a href="#产品形态" class="headerlink" title="产品形态"></a>产品形态</h4><h1 id="形态模式的工作原理"><a href="#形态模式的工作原理" class="headerlink" title="形态模式的工作原理"></a>形态模式的工作原理</h1><ol>
+<li>C/S结构 - Client&amp;Server处于相距很远的两台计算机上 - QQ、旺旺、APP</li>
+<li>B/S结构 - 用户通过浏览器向网站server发送服务请求，server处理并且返回结果- google、微博</li>
+</ol>
+<h1 id="形态模式的产品类型"><a href="#形态模式的产品类型" class="headerlink" title="形态模式的产品类型"></a>形态模式的产品类型</h1><ol>
+<li>功能型 - 玩数据</li>
+<li>智能型 - 玩技术 - 语音识别等等</li>
+</ol>
+<blockquote>
+<p>MVC模式技术开发框架  </p>
+<p>MVP：  </p>
+<p>MTV：  h</p>
+<p>CBD：  </p>
+<p>ORM：  </p>
+</blockquote>
+<h3 id="原型设计"><a href="#原型设计" class="headerlink" title="原型设计"></a>原型设计</h3><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>信息结构图与产品结构图<br><img src="/2018/04/24/《杰出产品经理》读书笔记/B33661AC-1357-4A78-AEE5-215C1BA48204.JPG" alt=""><br><img src="/2018/04/24/《杰出产品经理》读书笔记/9A4A2460-1216-493C-A923-567D1B71ED64.JPG" alt=""><br>这部分在PRD写作的读书笔记里写过 就不再赘述</p>
+<h1 id="设计理念"><a href="#设计理念" class="headerlink" title="设计理念"></a>设计理念</h1><p>金字塔图<img src="/2018/04/24/《杰出产品经理》读书笔记/IMG_0045.JPG" alt=""></p>
+<ol>
+<li>有用：抓住核心需求</li>
+<li>可用：满足不同使用场景</li>
+<li>易用：便于用户使用</li>
+<li>好用：优化设计界面、符合用户群体喜好</li>
+</ol>
+<h1 id="10个设计理论"><a href="#10个设计理论" class="headerlink" title="10个设计理论"></a>10个设计理论</h1><ol>
+<li>系统标准 - 依照用户使用的情境来决定是沿用标准还是创新</li>
+<li>目标导向 - 以用户为中心，关注用户目标而不是要完成的任务</li>
+<li>直觉体验 - 引导用户做出最符合直接的反应行为</li>
+<li>成本控制 - 减少用户学习成本</li>
+<li>需求设计 - 以用户的需求为中心</li>
+<li>减少界面 - 减少界面间的交互，避免新页面切断用户使用的流畅感</li>
+<li>概念内化 - 尽量以用户听得懂的语言来表达设计</li>
+<li>信息交互 - 基于信息层面的交互应当简单自然易懂</li>
+<li>简洁元素 - 减少视觉元素的堆叠，提高交互元素的辨识</li>
+<li>明确结构 - 合理划分及棉的逻辑结构，突出结构层次</li>
+</ol>
+<h2 id="ch6-产品文档"><a href="#ch6-产品文档" class="headerlink" title="ch6 产品文档"></a>ch6 产品文档</h2><blockquote>
+<p>会写就代表会思考  </p>
+</blockquote>
+<p>9个阶段：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">创意构思 - BRD - 商业需求文档</div><div class="line">立项策划 - MRD - 市场需求文档 - 描述市场的问题和机会，竞争环境介绍，用户需求和使用场景的概述，产品核心功能的亮点、商业前景概述、实施计划等内容</div><div class="line">产品设计</div><div class="line">开发实施 - 产品经理兼项目经理 - 甘特图</div><div class="line">产品测试</div><div class="line">灰度发布</div><div class="line">正式上线</div><div class="line">产品运营</div><div class="line">迭代更新</div></pre></td></tr></table></figure>
+<p>PRD产品需求文档容易忽略的9个细节：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">网络环境和状况 - 网络不好的情况下，放置默认图保证界面的完整性和美观</div><div class="line">统计事件埋点 - 特殊数据收集的需求 -热力图 用户留存 制定按钮的点击量</div><div class="line">前置和后置条件 - 条件限制，140字、1s语音等</div><div class="line">权限禁用 - 手动开启权限</div><div class="line">缺失提示文本</div><div class="line">操作和视觉焦点失衡</div><div class="line">操作成功和失败反馈</div><div class="line">二次确认提醒 - 不可逆转的功能弹出提醒避免误操作</div><div class="line">无响应操作的反馈 - 一直加载等要有加载信息提示，或者返回。</div></pre></td></tr></table></figure>
+<p>PRD内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">信息结构图</div><div class="line">产品结构图</div><div class="line">界面线框图</div><div class="line">功能流程图</div><div class="line">产品需求文档 - 做一个大包总结</div></pre></td></tr></table></figure>
+<h2 id="ch7-需求实现"><a href="#ch7-需求实现" class="headerlink" title="ch7 需求实现"></a>ch7 需求实现</h2><p> ch7 需求实现<br>相关知识：目标管理、沟通技巧、项目管理</p>
+<h3 id="目标管理"><a href="#目标管理" class="headerlink" title="目标管理"></a>目标管理</h3><p>在实际项目中，战略规划是由公司高层领导确定，项目负责人分解战略并且细化，同时确定阶段目标，最后由产品经理负责阶段目标中产品需求的规划和设计，然后沟通开发协调团队完成产品需求的开发与上线。<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">目标管理方法：大目标-&gt;子目标-&gt;子目标-&gt;小目标</div><div class="line">产品目标管理：战略方向-&gt;阶段目标-&gt;版本1/2/3-&gt;功能需求1/2/3</div></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="SMART原则"><a href="#SMART原则" class="headerlink" title="SMART原则"></a>SMART原则</h4><p>明确性、衡量性、可达成性、相关性和时限性<br><code>目标明确、目标量化、确定目标在能力范围内可以实现、
+目标与其他目标之间是相关联的、目标具有时间限制</code></p>
+<h3 id="团队协同"><a href="#团队协同" class="headerlink" title="团队协同"></a>团队协同</h3><p>交互：用户体验&lt;-用户行为习惯<br>视觉：风格美观<br>技术：实现模型<br>团队沟通要素与技巧</p>
+<h3 id="项目管理"><a href="#项目管理" class="headerlink" title="项目管理"></a>项目管理</h3><p> 甘特图<br><img src="/2018/04/24/《杰出产品经理》读书笔记/IMG_0047.JPG" alt="IMG_0047"><br>通过活动列表和时间刻度形象地表示出任何特定项目的活动顺序和持续时间</p>
+<p>目标管理可以看作项目管理的子项目</p>
+<h4 id="任务分配："><a href="#任务分配：" class="headerlink" title="任务分配："></a>任务分配：</h4><p><code>设定目标、分配任务：姓名、工作内容、截止日期</code></p>
+<h2 id="ch8-迭代优化"><a href="#ch8-迭代优化" class="headerlink" title="ch8 迭代优化"></a>ch8 迭代优化</h2><p><code>获取需求-&gt;分析需求-&gt;决策需求</code></p>
+<h4 id="获取需求"><a href="#获取需求" class="headerlink" title="获取需求"></a>获取需求</h4><ol>
+<li>收集需求：内部、外部、自己</li>
+<li>管理需求：需求池-&gt;功能属性与职责属性<h4 id="分析需求"><a href="#分析需求" class="headerlink" title="分析需求"></a>分析需求</h4>1个核心思想：<br>3个考虑因素：战略定位、产品定位、用户需求<br>4个设计理念：有用 可用 易用 好用<h3 id="决策需求"><a href="#决策需求" class="headerlink" title="决策需求"></a>决策需求</h3>四象限图<br>重要急需 重要不急需 不重要但急需 不重要不急需<h3 id="安排版本计划"><a href="#安排版本计划" class="headerlink" title="安排版本计划"></a>安排版本计划</h3><h2 id="ch9-完整案例分享"><a href="#ch9-完整案例分享" class="headerlink" title="ch9 完整案例分享"></a>ch9 完整案例分享</h2>产品运营不分家，产品也是客服<h2 id="ch10-工作感悟分享"><a href="#ch10-工作感悟分享" class="headerlink" title="ch10 工作感悟分享"></a>ch10 工作感悟分享</h2>面试建议：</li>
+<li>提体验方面的建议优化比较好</li>
+<li>先试验为dream offer做准备</li>
+<li>入职后的工作、先分析和研究</li>
+<li>思考面试题<br>突破瓶颈：</li>
+<li>产品体验 - UED团队博客分析</li>
+<li>产品架构 - 技术知识<br>会议效率：</li>
+<li>战略型</li>
+<li>立项型 - 前景提要（战略提要）、介绍产品方案（不用交互、规划方案就可以）、介绍产品研发技术（图➕解说）、回归到战略</li>
+<li>探讨会议</li>
+<li>执行会议 - 时间分配</li>
+</ol>
+
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/04/26/产品运营常用指标/" data-toggle="tooltip" data-placement="top"
+                           title="产品运营常用指标">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/04/22/《独角兽之路》读书笔记/" data-toggle="tooltip" data-placement="top"
+                           title="《独角兽之路》读书笔记">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ch1-全方位认识产品经理"><span class="toc-text">ch1 全方位认识产品经理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工作"><span class="toc-text">工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch2-自我学习与修养"><span class="toc-text">ch2 自我学习与修养</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#学习建议"><span class="toc-text">学习建议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取产品的途径"><span class="toc-text">获取产品的途径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch3-市场分析"><span class="toc-text">ch3 市场分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#用户分析"><span class="toc-text">用户分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#竞品分析"><span class="toc-text">竞品分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#市场分析总结"><span class="toc-text">市场分析总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch4-产品策划"><span class="toc-text">ch4 产品策划</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#工作内容"><span class="toc-text">工作内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#考虑因素"><span class="toc-text">考虑因素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#战略方向"><span class="toc-text">战略方向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#产品定位"><span class="toc-text">产品定位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#用户需求"><span class="toc-text">用户需求</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#明确条件"><span class="toc-text">明确条件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch5-产品设计"><span class="toc-text">ch5 产品设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#架构设计"><span class="toc-text">架构设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#产品公式"><span class="toc-text">产品公式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#产品形态"><span class="toc-text">产品形态</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#形态模式的工作原理"><span class="toc-text">形态模式的工作原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#形态模式的产品类型"><span class="toc-text">形态模式的产品类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#原型设计"><span class="toc-text">原型设计</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设计理念"><span class="toc-text">设计理念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10个设计理论"><span class="toc-text">10个设计理论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ch6-产品文档"><span class="toc-text">ch6 产品文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch7-需求实现"><span class="toc-text">ch7 需求实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目标管理"><span class="toc-text">目标管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SMART原则"><span class="toc-text">SMART原则</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#团队协同"><span class="toc-text">团队协同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目管理"><span class="toc-text">项目管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#任务分配："><span class="toc-text">任务分配：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch8-迭代优化"><span class="toc-text">ch8 迭代优化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#获取需求"><span class="toc-text">获取需求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分析需求"><span class="toc-text">分析需求</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#决策需求"><span class="toc-text">决策需求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安排版本计划"><span class="toc-text">安排版本计划</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch9-完整案例分享"><span class="toc-text">ch9 完整案例分享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ch10-工作感悟分享"><span class="toc-text">ch10 工作感悟分享</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#阅读"
+                           title="阅读">阅读</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

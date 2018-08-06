@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        搭建hexo遇到的一些坑｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2017/07/22/搭建hexo遇到的一些坑/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>搭建hexo遇到的一些坑</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2017-07-22
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#hexo"
+                           title="hexo">hexo</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            搭建hexo遇到的一些坑
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h2 id="DTrace错误"><a href="#DTrace错误" class="headerlink" title="DTrace错误"></a>DTrace错误</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&#123; [Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div><div class="line">&#123; [Error: Cannot find module &apos;./build/default/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div><div class="line">&#123; [Error: Cannot find module &apos;./build/Debug/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div></pre></td></tr></table></figure>
+<p>在更新theme的时候突然出现了这个bug，一下子就进入了一直404的状态。</p>
+<h3 id="面向搜索引擎的解决办法"><a href="#面向搜索引擎的解决办法" class="headerlink" title="面向搜索引擎的解决办法"></a>面向搜索引擎的解决办法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure>
+<p>的确很多人执行命令之后解决了报错的问题，但也有不少小伙伴跟我一样执行后没有任何效果。</p>
+<p>之后傻乎乎的打算重装hexo</p>
+<p>仍然不管用😢</p>
+<p>最后重装后输入了下面的语句（奇怪，之前一样是在这个目录运行的,然而那次就gg了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ cd blog</div><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure>
+<h2 id="更新theme"><a href="#更新theme" class="headerlink" title="更新theme"></a>更新theme</h2><p>作为一个颜狗，选择hexo就是为了好看的主题啊～</p>
+<p>不然为了颜值，大概会在lofter写博客</p>
+<p>（哇 小伙伴写同人，我写技术博客，简直了。</p>
+<p><img src="/2017/07/22/搭建hexo遇到的一些坑/1.jpg" alt=""></p>
+<p>头可断血可流，颜值不能丢。</p>
+<p>关于theme，选择的是大热门next的pisces+自己改了背景</p>
+<h3 id="如何更新theme"><a href="#如何更新theme" class="headerlink" title="如何更新theme"></a>如何更新theme</h3><p>1.修改博客目录config.yml中的theme属性，将其设置为next。</p>
+<p>2.在主题更新之前，一定要备份好主题目录下的_config.yml文件，尤其是到后面修改了很多配置之后。在themes/nest目录下执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+<p>种草的一些：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git clone https://github.com/SuperKieran/TKL themes/TKL</div></pre></td></tr></table></figure>
+<ul>
+<li><p><a href="https://github.com/Haojen/hexo-theme-Anisina" target="_blank" rel="external">Anisina</a> <a href="http://haojen.github.io" target="_blank" rel="external">作者blog</a> 非常干净的一个theme</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">git clone https://github.com/Haojen/hexo-theme-Anisina themes/hexo-theme-Anisina</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">* [Material 原质](https://github.com/viosey/hexo-theme-material)  扁平化／支持多图流</div></pre></td></tr></table></figure>
+<p>git clone <a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="external">https://github.com/viosey/hexo-theme-material</a> themes/hexo-theme-material<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">（怎么有种我的马云家购物车的感觉...</div><div class="line"></div><div class="line">## 插入图片</div><div class="line">表情包大户必备</div><div class="line"></div><div class="line">1.设置post\_asset_folder为true</div><div class="line"></div><div class="line">2.在hexo的目录下执行</div></pre></td></tr></table></figure></p>
+<p>npm install <a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="external">https://github.com/CodeFalling/hexo-asset-image</a> –save<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">（需要等待一段时间）</div><div class="line"></div><div class="line">使用如下代码插入图片</div></pre></td></tr></table></figure></p>
+<p><img src="/2017/07/22/搭建hexo遇到的一些坑/logo.jpg" alt="logo"><br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">其中[]里面不写文字则没有图片标题。</div><div class="line"></div><div class="line">======================</div><div class="line">与此同时，生成的html是</div><div class="line"></div><div class="line">![](搭建hexo遇到的一些坑/2.png)</div><div class="line"></div><div class="line">而不是</div><div class="line"></div><div class="line">![](搭建hexo遇到的一些坑/3.png)</div><div class="line"></div><div class="line">## 写文章</div><div class="line">next主题给文章加分类的方法是</div></pre></td></tr></table></figure></p>
+<p>categories: example<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">next主题给文章加标签的方法是</div></pre></td></tr></table></figure></p>
+<p>tags： - example1</p>
+<pre><code> - example2
+ or
+[example1，example2]
+</code></pre><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">**需要注意的是next主题在需要创建标签页和归档页，不然点目录会出现404的情况**</div><div class="line"></div><div class="line">### 归档页</div><div class="line">在blog（hexo根目录）使用以下代码：</div></pre></td></tr></table></figure>
+<p>$ hexo new page categories<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">然后在***blog/source***文件夹下新生成的***categories***文件夹下***index.md***文件中修改</div></pre></td></tr></table></figure></p>
+<hr>
+<p>title: categories<br>date: 2017-7-23 19:11:13</p>
+<h2 id="type-“categories”"><a href="#type-“categories”" class="headerlink" title="type: “categories”"></a>type: “categories”</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">### 标签页</div><div class="line">在blog（hexo根目录）使用以下代码：</div></pre></td></tr></table></figure>
+<p>$ hexo new page tags<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">然后在***blog/source***文件夹下新生成的***tags***文件夹下***index.md***文件中修改</div></pre></td></tr></table></figure></p>
+<hr>
+<p>title: categories<br>date: 2017-7-23 19:11:13</p>
+<h2 id="type-“tags”"><a href="#type-“tags”" class="headerlink" title="type: “tags”"></a>type: “tags”</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">还有许多要改进和学习的地方！</div><div class="line">7.23 1:35更新</div><div class="line">待填：</div><div class="line"></div><div class="line">* 文章字数统计和阅读时间功能</div><div class="line">* 文章浏览人数功能</div><div class="line">* 站点访问人数功能</div><div class="line"></div><div class="line">=====未完待续=====</div></pre></td></tr></table></figure>
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/12/25/网络安全理论/" data-toggle="tooltip" data-placement="top"
+                           title="网络安全理论">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#DTrace错误"><span class="toc-text">DTrace错误</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#面向搜索引擎的解决办法"><span class="toc-text">面向搜索引擎的解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新theme"><span class="toc-text">更新theme</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#如何更新theme"><span class="toc-text">如何更新theme</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#type-“categories”"><span class="toc-text">type: “categories”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#type-“tags”"><span class="toc-text">type: “tags”</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#hexo"
+                           title="hexo">hexo</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

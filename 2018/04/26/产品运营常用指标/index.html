@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        产品运营常用指标｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2018/04/26/产品运营常用指标/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>产品运营常用指标</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2018-04-26
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#运营"
+                           title="运营">运营</a>
+                        
+                        <a class="tag" href="/tags/#数据指标"
+                           title="数据指标">数据指标</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            产品运营常用指标
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h1 id="产品运营常用指标"><a href="#产品运营常用指标" class="headerlink" title="产品运营常用指标"></a>产品运营常用指标</h1><blockquote>
+<p>抽卡游戏中可爱的老公老婆们被产品经理推着拉升了ARPPU，在分手前挣到了足够发奖金的LTV（冷漠脸</p>
+</blockquote>
+<h2 id="网页"><a href="#网页" class="headerlink" title="网页"></a>网页</h2><h3 id="页面浏览量-PV"><a href="#页面浏览量-PV" class="headerlink" title="页面浏览量 (PV)"></a>页面浏览量 (PV)</h3><p><code>一定统计周期内（通常是24小时）所有访问者浏览的页面总数</code></p>
+<p>该指标重复计算：一个访问者浏览同一页面3次，那么PV就计算为3个</p>
+<p>“<strong>收视率</strong>”</p>
+<h3 id="独立访问者-UV"><a href="#独立访问者-UV" class="headerlink" title="独立访问者 (UV)"></a>独立访问者 (UV)</h3><p><code>在一定统计周期内访问某站点的不同IP地址的人数</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">e.g. 某人访问网易首页，点开了3条新闻</div><div class="line">ans 记录了4个PV和1个UV</div><div class="line">考虑到校园、企业有统一的对外IP出口，更优的做法是结合cookies</div></pre></td></tr></table></figure>
+<h3 id="访问数-visit"><a href="#访问数-visit" class="headerlink" title="访问数 (visit)"></a>访问数 (visit)</h3><p><code>访问者从进入网站到离开网站之间的整个交互过程，视作一次Visit</code></p>
+<p>它可能包含一组页面浏览行为。</p>
+<p>通常界定同一访问者的两次不同Visit的判定方法是间隔长，如<em>30分钟</em>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">e.g. 如果同一访问者连续的两次页面访问之间间隔为15分钟，则视作一次Visit；</div><div class="line">	如果间隔41分钟（因故障时离开或阅读一篇长文），则被切分为两次Visit。</div></pre></td></tr></table></figure>
+<h3 id="着陆页（Landing-Page）"><a href="#着陆页（Landing-Page）" class="headerlink" title="着陆页（Landing Page）"></a>着陆页（Landing Page）</h3><p><code>指访问者浏览网站时所到达的第一个页面，又称用户捕获页</code></p>
+<p>针对着陆页的分析追踪可作为<strong>判定外部广告或者其他营销推广活动效果</strong>的依据，因此着陆页应当是经过恰当优化的。</p>
+<h3 id="退出页（Exit-Page）"><a href="#退出页（Exit-Page）" class="headerlink" title="退出页（Exit Page）"></a>退出页（Exit Page）</h3><p><code>指访问者浏览网站时所访问的最后一个页面。</code></p>
+<p>退出页数量大，并不等同于网站的黏性差，此时应当<strong>参照退出数与页面浏览量的比值</strong>，即退出率。</p>
+<h4 id="退出率"><a href="#退出率" class="headerlink" title="退出率"></a>退出率</h4><p><code>退出数与页面浏览量的比值</code></p>
+<p>若某个页面本不该有较高的退出率（如在线购买流程的下单环节），则需要检查该页面，防止其成为整站的浏览漏洞。</p>
+<h3 id="跳出率（Bounce-Rate）"><a href="#跳出率（Bounce-Rate）" class="headerlink" title="跳出率（Bounce Rate）"></a>跳出率（Bounce Rate）</h3><p><code>跳出，指访问者仅仅浏览了一个页面就结束了访问（Visit）。</code></p>
+<p><strong>用于衡量整站或网页的黏性</strong></p>
+<p><strong>整站跳出率=全站跳出数/全站页面浏览量</strong>，它反映了整站的导航效率；</p>
+<p>而针对单独页面计算的<strong>页面跳出率=该页面跳出数/该页面浏览量</strong>，它是对单个网页导航能力的评价。</p>
+<p>一般而言，跳出率越高代表网站的问题越大。</p>
+<h3 id="展现数（Impressions）"><a href="#展现数（Impressions）" class="headerlink" title="展现数（Impressions）**"></a>展现数（Impressions）**</h3><p><code>又称印象数，指广告在浏览器中被加载的次数。</code></p>
+<p>只要广告内容被加载出一次（如刷新了页面），展现数就+1</p>
+<h3 id="服务器打点数（Hit）"><a href="#服务器打点数（Hit）" class="headerlink" title="服务器打点数（Hit）"></a>服务器打点数（Hit）</h3><p><code>打点指服务器收到一次请求。</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">e.g.</div><div class="line">如访问者浏览了一个仅有10张图片的网页，则打点数记作11，其中包括1次网页请求和10次加载图片的请求。</div></pre></td></tr></table></figure>
+<h3 id="转化率（Conversion-Rate）"><a href="#转化率（Conversion-Rate）" class="headerlink" title="转化率（Conversion Rate）"></a>转化率（Conversion Rate）</h3><p>转化，指达成了某种设定的目标，如引导用户完成下载、注册、新闻订阅、走完新手介绍流程等。<strong>转化率是计量这种转化成效的指标</strong>，可用于<strong>衡量网站内容对访问者的吸引程度和宣传效果</strong>等。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">e.g.</div><div class="line">广告条的转化率=通过广告条点击进入着陆页的流量/广告条的展现数</div><div class="line">注册的转化率=完成注册流程的用户数/到达注册页面的流量。</div></pre></td></tr></table></figure>
+<h3 id="停留时间（Duration）"><a href="#停留时间（Duration）" class="headerlink" title="停留时间（Duration）"></a>停留时间（Duration）</h3><p><code>指一次访问的持续时长。</code></p>
+<p>通常较为简单的计算方法是<strong>用最后一次的访问的时间减去访问第一张页面的时间</strong>（但这将无法统计最后一次访问的持续时长）。</p>
+<h3 id="初访者（New-Visitor）"><a href="#初访者（New-Visitor）" class="headerlink" title="初访者（New Visitor）"></a>初访者（New Visitor）</h3><p><code>初次访问网站的访问者。</code></p>
+<p>通常用Cookie判断，并以一定时限为统计周期，通常为<strong>一个月</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">e.g.</div><div class="line"></div><div class="line">上月某人访问过网站，次月再访问，则对于次月内的第一次访问而言，这个访问者仍视作改月内的一个新的初访者。</div></pre></td></tr></table></figure>
+<h3 id="回访者（Return-Visitor）"><a href="#回访者（Return-Visitor）" class="headerlink" title="回访者（Return Visitor）"></a>回访者（Return Visitor）</h3><p>相对初访者而言，<strong>如果一个访问者在该月内重复访问</strong>，则视作回访者，也就是“回头客”。该指标<strong>衡量网站内容对访问者的吸引程度和网站实用性</strong>。</p>
+<p><strong>统计周期内所有访问者数量+所有回访者数量=独立访问者数量</strong>。</p>
+<h3 id="访问来源（Referrer）"><a href="#访问来源（Referrer）" class="headerlink" title="访问来源（Referrer）"></a>访问来源（Referrer）</h3><p><code>指一次访问或一个网页浏览的流量来源，又被称作“推荐来源”。</code></p>
+<p>访问来源可从不同维度进行划分。</p>
+<p>如按来源网站的性质，可划分为来自<strong>搜索引擎、网站推荐</strong>（如友情链接、广告条、软文植入）、<strong>无网站来源</strong>（用户直接进入网站，如从浏览器收藏夹点入、直接在地址栏输入域名）等；</p>
+<p>按来源网站的形式，可划分为来自<strong>域</strong>（如fanbing.net）、<strong>网站</strong>（如www.fanbing.net）或<strong>URL</strong>（如<a href="http://www.fanbing.net/about.html）；" target="_blank" rel="external">http://www.fanbing.net/about.html）；</a></p>
+<p>按照内外部，可划分为<strong>站外链接</strong>或<strong>站内来源</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">性质：搜索引擎、网站推荐、无网站来源</div><div class="line">形式：域、网站、URL</div><div class="line">内外部：站外链接、站内来源</div></pre></td></tr></table></figure>
+<h3 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h3><p>有的第三方统计工具可结合自身收集的其他数据，获取访问者进一步的信息，如地域分布、系统环境、性别比例、年龄分布、学历分布、职业分布等。</p>
+<h2 id="软件及移动应用类产品​"><a href="#软件及移动应用类产品​" class="headerlink" title="软件及移动应用类产品​"></a>软件及移动应用类产品​</h2><h3 id="新增用户数（New-Users）"><a href="#新增用户数（New-Users）" class="headerlink" title="新增用户数（New Users）"></a>新增用户数（New Users）</h3><p><code>指首次打开应用的用户数量</code></p>
+<p><strong>通常通过设备识别符（如苹果系统的UDID）来识别用户的唯一身份。</strong></p>
+<p>由于传输统计数据需要联网，因此即便是首次打开应用，若未能联网，也统计不到。此外，<strong>卸载再安装通常不会算作新用户，老用户的版本升级也不会计算在内</strong>。</p>
+<p>当然，如果下载了应用但未安装，或安装之后没有启动过，也无法统计为新增用户。</p>
+<h3 id="活跃用户数（Active-Users）"><a href="#活跃用户数（Active-Users）" class="headerlink" title="活跃用户数（Active Users）"></a>活跃用户数（Active Users）</h3><p><code>指统计周期内有过特定使用行为的用户数量</code></p>
+<p><strong>同一用户在一个统计周期内多次使用记作一个活跃用户</strong>。</p>
+<p>这里“使用行为”的定义因应用而异:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">有的团队将启动即视作活跃</div><div class="line">有的则需要通过满足启动+执行某种操作（如浏览过至少一条新闻）</div><div class="line">有的则索性将常驻后台的守护进程没有被杀死也统计进了活跃范畴中。</div></pre></td></tr></table></figure>
+<p>因此如何计算活跃用户数，归根到底还是看团队真正追求的是什么。</p>
+<h4 id="“日活”（Daily-Active-Users，DAU）"><a href="#“日活”（Daily-Active-Users，DAU）" class="headerlink" title="“日活”（Daily Active Users，DAU）"></a>“日活”（Daily Active Users，DAU）</h4><h4 id="“月活”（Monthly-Active-Users，MAU）。"><a href="#“月活”（Monthly-Active-Users，MAU）。" class="headerlink" title="“月活”（Monthly Active Users，MAU）。"></a>“月活”（Monthly Active Users，MAU）。</h4><p>活跃用户数一般看<strong>“日活”（Daily Active Users，DAU）</strong>和<strong>“月活”（Monthly Active Users，MAU）</strong>。</p>
+<h3 id="升级用户数（Updated-Users）​"><a href="#升级用户数（Updated-Users）​" class="headerlink" title="升级用户数（Updated Users）​"></a>升级用户数（Updated Users）​</h3><p><code>指由已装的老版本升级到新版本的用户数量。</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">e.g.</div><div class="line">QQ这样保有量很大的应用，在应用市场上有巨大的下载量</div><div class="line">ans.</div><div class="line">其中很重要的因素之一，就是将用户从老版本升级到新版本的下载行为统计进去。</div></pre></td></tr></table></figure>
+<h3 id="留存率（Retention-Rate）"><a href="#留存率（Retention-Rate）" class="headerlink" title="留存率（Retention Rate）"></a>留存率（Retention Rate）</h3><p><code>指用户在某段时间内开始使用应用后，经过一段时间，仍然继续使用，这部分用户占当时新增用户的比率</code></p>
+<p>也就是“有多少人最后留下来了”。</p>
+<p><strong>留存率=仍然继续使用的用户/当时新增用户</strong></p>
+<p><strong>留存率用户衡量应用的质量和营销效果的好坏</strong>。</p>
+<p>通常新增用户如果因为真实需求而来（如从应用市场主动搜索并下载获得），则留存率较高；而因为博眼球的营销推广（尤其是有奖活动）进来的用户，留存率较低。</p>
+<p>并且，不同种类应用的留存率也有各自的基准，如游戏的首月留存率通常比社交类高，而工具类首月留存率又比游戏高。</p>
+<p><strong>留存率通常看次日留存率、3日留存率、7日留存率、15日留存率和30日留存率。</strong></p>
+<h3 id="总用户数（Total-Users）"><a href="#总用户数（Total-Users）" class="headerlink" title="总用户数（Total Users）"></a>总用户数（Total Users）</h3><p><code>指历史上所有新增用户数之和。</code></p>
+<p>该数字由单纯地相加获得，存在一定水分，无法体现已经流失或不活跃的用户情况。</p>
+<h3 id="单次使用时长（Duration）"><a href="#单次使用时长（Duration）" class="headerlink" title="单次使用时长（Duration）"></a>单次使用时长（Duration）</h3><p><code>指用户从一次启动到退出应用所耗费的时间长短</code></p>
+<p>用于衡量应用的黏性。</p>
+<p><strong>应用在后台运行并不会计入其中</strong>。不同类别的应用，单次使用时长可以千差万别。工具类产品解决问题目标明确，用户完成任务之后会立即退出，比如看一下天气、优化一下内存占用等，用几秒就可以关闭。而视频播放类应用则能持续更久，通常可达到几十分钟。</p>
+<h3 id="平均单次使用时长（Average-Duration）"><a href="#平均单次使用时长（Average-Duration）" class="headerlink" title="平均单次使用时长（Average Duration）"></a>平均单次使用时长（Average Duration）</h3><p><code>计算方法是某日中总时长/该日启动数</code></p>
+<p>可用于更准确地评估用户的使用状态。</p>
+<p>因为一款应用在不同时段的使用时长可能存在差异，用户早上挤地铁时的一瞥与晚间睡觉前的沉浸使用，其单次使用时长本身是不具备可比性的，只有平均之后才能用于横向比较。</p>
+<h3 id="使用间隔（Interval）"><a href="#使用间隔（Interval）" class="headerlink" title="使用间隔（Interval）"></a>使用间隔（Interval）</h3><p><code>指连续两次使用之间的时间间隔。</code></p>
+<p>如果一款定位于提供每日新闻资讯的应用的<strong>使用间隔过长</strong>，则说明<strong>对用户的黏性不够强</strong>，并未培养成每日使用的习惯，只是在偶尔想起来时看一眼。</p>
+<p>这就需要在产品上下功夫，或采取一些运营手段弥补，如定时推送当日的头条新闻。</p>
+<h3 id="转化率（Conversion-Rate）-1"><a href="#转化率（Conversion-Rate）-1" class="headerlink" title="转化率（Conversion Rate）"></a>转化率（Conversion Rate）</h3><p><code>指应用内特定行为目标的转化情况</code></p>
+<p>如让用户点击某个按钮、播放一段视频、邀请一批好友等。</p>
+<h3 id="K因子（K-Factor）"><a href="#K因子（K-Factor）" class="headerlink" title="K因子（K-Factor）"></a>K因子（K-Factor）</h3><p><code>衡量产品的病毒传播能力</code></p>
+<p>计算方法为<strong>每个用户平均发出的邀请数量/收到邀请转化成新增用户的比率</strong>。</p>
+<p><strong>如果K因子大于1，表明产品具有自我传播能力，会随着用户的使用而持续扩散。</strong></p>
+<h3 id="每用户平均收益（Average-Revenue-Per-User，ARPU）"><a href="#每用户平均收益（Average-Revenue-Per-User，ARPU）" class="headerlink" title="每用户平均收益（Average Revenue Per User，ARPU）"></a>每用户平均收益（Average Revenue Per User，ARPU）</h3><p>简单的理解就是“能从每个用户那里收多少钱”，是<strong>衡量产品盈利能力的指标</strong>，也可用来检测<strong>不同市场渠道获取的用户质量</strong>。</p>
+<p>ARPU的通常计算方法是<strong>产品在一定时限内的收入／活跃用户数</strong>。结合单用户的获取成本，可以推断出产品是否能形成自我造血的持续发展能力。</p>
+<h3 id="每付费用户平均收益（Average-Revenue-Per-Paid-User，ARPPU）"><a href="#每付费用户平均收益（Average-Revenue-Per-Paid-User，ARPPU）" class="headerlink" title="每付费用户平均收益（Average Revenue Per Paid User，ARPPU）"></a>每付费用户平均收益（Average Revenue Per Paid User，ARPPU）</h3><p>与ARPU将收入平摊到所有用户头上不同，ARPPU只计算从所有付费用户处获取的平均收益，据此更准确地把握付费用户的支付能力、消费习惯，并有针对性地对这部分付费用户重点运营和服务。</p>
+<h3 id="月付费率（Monthly-Payment-Ratio，MPR）"><a href="#月付费率（Monthly-Payment-Ratio，MPR）" class="headerlink" title="月付费率（Monthly Payment Ratio，MPR）"></a>月付费率（Monthly Payment Ratio，MPR）</h3><p>指一个月的统计区间内<strong>付费用户占活跃用户的比例</strong>。</p>
+<h3 id="生命周期价值（Life-Time-Value，LTV）"><a href="#生命周期价值（Life-Time-Value，LTV）" class="headerlink" title="生命周期价值（Life Time Value，LTV）"></a>生命周期价值（Life Time Value，LTV）</h3><p>用户从第一次使用产品，到最后一次使用之间，累计贡献的<strong>付费总量</strong>。</p>
+<blockquote>
+<p>参考：《增长黑客》 范冰</p>
+</blockquote>
+
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/04/28/《增长黑客》读书笔记/" data-toggle="tooltip" data-placement="top"
+                           title="《增长黑客》读书笔记">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/04/24/《杰出产品经理》读书笔记/" data-toggle="tooltip" data-placement="top"
+                           title="《杰出产品经理》读书笔记">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#产品运营常用指标"><span class="toc-text">产品运营常用指标</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#网页"><span class="toc-text">网页</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#页面浏览量-PV"><span class="toc-text">页面浏览量 (PV)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#独立访问者-UV"><span class="toc-text">独立访问者 (UV)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#访问数-visit"><span class="toc-text">访问数 (visit)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#着陆页（Landing-Page）"><span class="toc-text">着陆页（Landing Page）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#退出页（Exit-Page）"><span class="toc-text">退出页（Exit Page）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#退出率"><span class="toc-text">退出率</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#跳出率（Bounce-Rate）"><span class="toc-text">跳出率（Bounce Rate）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#展现数（Impressions）"><span class="toc-text">展现数（Impressions）**</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服务器打点数（Hit）"><span class="toc-text">服务器打点数（Hit）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转化率（Conversion-Rate）"><span class="toc-text">转化率（Conversion Rate）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#停留时间（Duration）"><span class="toc-text">停留时间（Duration）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初访者（New-Visitor）"><span class="toc-text">初访者（New Visitor）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#回访者（Return-Visitor）"><span class="toc-text">回访者（Return Visitor）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#访问来源（Referrer）"><span class="toc-text">访问来源（Referrer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他属性"><span class="toc-text">其他属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件及移动应用类产品​"><span class="toc-text">软件及移动应用类产品​</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新增用户数（New-Users）"><span class="toc-text">新增用户数（New Users）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#活跃用户数（Active-Users）"><span class="toc-text">活跃用户数（Active Users）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#“日活”（Daily-Active-Users，DAU）"><span class="toc-text">“日活”（Daily Active Users，DAU）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#“月活”（Monthly-Active-Users，MAU）。"><span class="toc-text">“月活”（Monthly Active Users，MAU）。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#升级用户数（Updated-Users）​"><span class="toc-text">升级用户数（Updated Users）​</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#留存率（Retention-Rate）"><span class="toc-text">留存率（Retention Rate）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总用户数（Total-Users）"><span class="toc-text">总用户数（Total Users）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单次使用时长（Duration）"><span class="toc-text">单次使用时长（Duration）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#平均单次使用时长（Average-Duration）"><span class="toc-text">平均单次使用时长（Average Duration）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用间隔（Interval）"><span class="toc-text">使用间隔（Interval）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转化率（Conversion-Rate）-1"><span class="toc-text">转化率（Conversion Rate）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#K因子（K-Factor）"><span class="toc-text">K因子（K-Factor）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#每用户平均收益（Average-Revenue-Per-User，ARPU）"><span class="toc-text">每用户平均收益（Average Revenue Per User，ARPU）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#每付费用户平均收益（Average-Revenue-Per-Paid-User，ARPPU）"><span class="toc-text">每付费用户平均收益（Average Revenue Per Paid User，ARPPU）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#月付费率（Monthly-Payment-Ratio，MPR）"><span class="toc-text">月付费率（Monthly Payment Ratio，MPR）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生命周期价值（Life-Time-Value，LTV）"><span class="toc-text">生命周期价值（Life Time Value，LTV）</span></a></li></ol></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#运营"
+                           title="运营">运营</a>
+                        
+                        <a class="tag" href="/tags/#数据指标"
+                           title="数据指标">数据指标</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

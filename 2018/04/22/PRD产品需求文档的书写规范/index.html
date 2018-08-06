@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        PRD产品需求文档的书写规范｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2018/04/22/PRD产品需求文档的书写规范/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>PRD产品需求文档的书写规范</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2018-04-22
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#PRD"
+                           title="PRD">PRD</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            PRD产品需求文档的书写规范
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h1 id="PRD的书写"><a href="#PRD的书写" class="headerlink" title="PRD的书写"></a>PRD的书写</h1><h2 id="PRD介绍"><a href="#PRD介绍" class="headerlink" title="PRD介绍"></a>PRD介绍</h2><p>英文Product Requirement Document</p>
+<p>中文：产品需求文档    </p>
+<p>定义：基于BRD、MRD的延续文档</p>
+<p>地位：产品设计的最终表述的形式</p>
+<p>读者：执行层面的工作人员，设计与技术人员(包括测试工程师)</p>
+<p>​        次要设计师：依赖于产品原型进行交互或视觉的设计</p>
+<p>​        主要技术人员：需要一份详细的产品功能需求说明文档</p>
+<blockquote>
+<p>技术人员不太关注产品的商业需求和市场愿景，因为在进行产品讨论立项时，产品的定义就已经向参与设计和研发的人员宣讲过，因此技术人员更多的是关注界面、功能、交互、元素等等内容</p>
+</blockquote>
+<p>产品需求文档是没有标准规范的，也没有统一的模板，每个公司都不一样和每个人也不一样，这个取决于个人习惯和团队要求。目的是能够明确产品的功能需求，便执行人员理解任务要求。</p>
+<h2 id="PRD写作"><a href="#PRD写作" class="headerlink" title="PRD写作"></a>PRD写作</h2><h3 id="罗列信息（信息结构图）"><a href="#罗列信息（信息结构图）" class="headerlink" title="罗列信息（信息结构图）"></a>罗列信息（信息结构图）</h3><p><strong>形式：文本、思维导图-&gt;信息结构图</strong></p>
+<p>目的：-&gt;设计功能的辅助信息</p>
+<p>​        -&gt;辅助服务端技术人员创建数据库</p>
+<p>但是初步，不需要太细，继续改进和完善</p>
+<h3 id="梳理需求（产品结构图）"><a href="#梳理需求（产品结构图）" class="headerlink" title="梳理需求（产品结构图）"></a>梳理需求（产品结构图）</h3><h5 id="1-罗列出产品的功能结构"><a href="#1-罗列出产品的功能结构" class="headerlink" title="1.罗列出产品的功能结构"></a>1.罗列出产品的功能结构</h5><p>使用思维导图软件，内容包括频道、页面、模块及元素。</p>
+<h5 id="2-从频道到页面，再细化页面功能模块和元素"><a href="#2-从频道到页面，再细化页面功能模块和元素" class="headerlink" title="2.从频道到页面，再细化页面功能模块和元素"></a>2.从频道到页面，再细化页面功能模块和元素</h5><p>产品 -&gt; 频道 -&gt; 页面 -&gt; 模块元素 -&gt; 操作 -&gt; 元素</p>
+<h5 id="3-梳理"><a href="#3-梳理" class="headerlink" title="3.梳理"></a>3.梳理</h5><p>梳理思路，通过这种方法可以明确产品有多少个频道、有多少个页面、页面有多少个功能模块、功能模块有多少个元素，逐步的将脑海里的想法明确梳理成结构。</p>
+<h3 id="原型设计（界面线框图）"><a href="#原型设计（界面线框图）" class="headerlink" title="原型设计（界面线框图）"></a>原型设计（界面线框图）</h3><p>Axure RP，sketch etc.</p>
+<h5 id="1-手绘原型"><a href="#1-手绘原型" class="headerlink" title="1.手绘原型"></a>1.手绘原型</h5><p>验证可行性，敏捷开发时快速出原型</p>
+<h5 id="2-灰模原型"><a href="#2-灰模原型" class="headerlink" title="2.灰模原型"></a>2.灰模原型</h5><p>灰模原型缺少交互效果，仅仅是将产品需求以线框结构的方式展示出来，让产品需求更加规整的直观展现</p>
+<h5 id="3-交互原型"><a href="#3-交互原型" class="headerlink" title="3.交互原型"></a>3.交互原型</h5><p>通常情况交互原型的设计要早于产品需求文档，是产品经理想法推演的重要一步</p>
+<p>一般产品经理与交互设计师共同讨论确定，然后由交互设计师制作</p>
+<p>但一般没有交互设计师这个职位，因此这类工作最终是由产品经理来负责的</p>
+<blockquote>
+<p>对于产品经理来说，原型设计是为了帮助我们细致的考虑方案，并论证方案的可行性，同时也是为了产品宣讲时让听众能够清晰直观的了解产品，避免抽象的语言描述导致听众理解困难和理解偏差。产品原型也是为了确保产品在执行过程中，是按产品经理最初设想的需求和期望完成的，因此产品经理的原型是没有很高的要求的，只要对方能够听懂看懂就可以了，所以使用手绘原型是最高效率的方法。</p>
+</blockquote>
+<h3 id="用例模型（产品用例图）"><a href="#用例模型（产品用例图）" class="headerlink" title="用例模型（产品用例图）"></a>用例模型（产品用例图）</h3><p>用例(Use Case)是一种描述产品需求的方法，使用用例的方法来描述产品需求的过程就是用例模型，用例模型是由用例图和每一个用例的详细描述文档所组成的。</p>
+<p>产品人员的用例主要是为了方便技术研发和功能测试时，让参与者更好的理解功能的逻辑.</p>
+<p>UML(Unified Modeling Language):统一建模语言或标准建模语言</p>
+<p>常用：Microsoft Office Visio</p>
+<blockquote>
+<p>产品用例是一种通过用户的使用场景来获取需求的方式，每个用例提供了一个或多个场景，该场景说明了产品是如何和最终用户或其它产品互动，也就是谁可以用产品做什么，从而获得一个明确的业务目标</p>
+</blockquote>
+<h5 id="1-用例图"><a href="#1-用例图" class="headerlink" title="1.用例图"></a>1.用例图</h5><p>用例图包含一组用例，每一个用例用椭圆表示，放置在矩形框中；</p>
+<p>矩形框表示整个系统。</p>
+<p>矩形框外画人or其他物件，表示参与者。参与者不一定是人，可以是其它产品、软件或硬件等等。</p>
+<p>某一参与者与某一用例用线连起来，表示该参与者和该用例有交互。</p>
+<h5 id="2-用例描述文档"><a href="#2-用例描述文档" class="headerlink" title="2.用例描述文档"></a>2.用例描述文档</h5><p>对于产品的功能有一个总体的认识除了图外，还需要描述每一个用例的详细信息</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">用例名称：本用例的名称或者编号</div><div class="line">行为角色：参与或操作(执行)该用例的角色</div><div class="line">简要说明：简要的描述一下本用例的需求(作用和目的)</div><div class="line">前置条件：参与或操作(执行)本用例的前提条件，或者所处的状态</div><div class="line">后置条件：执行完毕后的结果或者状态</div></pre></td></tr></table></figure>
+<p>另外状态图、流程图或序列图也可以用来辅助说明。</p>
+<p>只要有助于表达的简洁明了，就可以在用例中任意粘贴用户界面和流程的图形化显示方式，或是其它图形。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">流程图有助于描述复杂的决策流程</div><div class="line">状态转移图有助于描述与状态相关的系统行为</div><div class="line">序列图适合于描述基于时间顺序的消息传递。</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在互联网产品和设计中，用例的使用越来越少，通常有了产品原型再加上功能流程图和功能说明文档就能够将产品需求详细的表述清楚，所以也没有必须撰写用例了。但是在大公司里，往往会追求产品流程的规范性，要求撰写用例，不过在敏捷开发的时候也会采用其它更有效率的方式，不一定非要撰写用例。</p>
+</blockquote>
+<h3 id="逻辑流程（功能流程图）"><a href="#逻辑流程（功能流程图）" class="headerlink" title="逻辑流程（功能流程图）"></a>逻辑流程（功能流程图）</h3><p>一个完整的使用图形的方式表示算法逻辑的图表，可以直接转换成程序需求描述文档</p>
+<h3 id="需求文档"><a href="#需求文档" class="headerlink" title="需求文档"></a>需求文档</h3><h4 id="1-表现形式"><a href="#1-表现形式" class="headerlink" title="1.表现形式"></a>1.表现形式</h4><p>常见的有Word、图片和交互原型这三种形式，文档内容通常包含信息结构图、界面线框图、功能流程图、功能说明文档。</p>
+<p>虽然产品需求文档没有标准的规范，文件标识和修改记录必不可少。方便大家查看和了解改动的内容。</p>
+<p>参考格式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">|产品名称|文件标示|序号|版本|编写/修订说明|修订人|修订日期|备注|</div></pre></td></tr></table></figure>
+<h5 id="1-1-word"><a href="#1-1-word" class="headerlink" title="1.1 word"></a>1.1 word</h5><p>传统意义上的产品需求文档，主要有四个部分组成(具体根据产品要求进行划分)，分别是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">结构图</div><div class="line">全局说明</div><div class="line">频道功能</div><div class="line">效果图</div></pre></td></tr></table></figure>
+<p>没有市场方面的内容，尽量减化文档内容</p>
+<h5 id="1-1-1-结构图"><a href="#1-1-1-结构图" class="headerlink" title="1.1.1 结构图"></a>1.1.1 结构图</h5><p>信息结构图：主要是辅助服务端技术人员创建或调整数据结构的参考文件</p>
+<p>产品结构图：主要是辅助设计和技术开发人员了解产品的全局结构。</p>
+<h5 id="1-1-2-全局说明"><a href="#1-1-2-全局说明" class="headerlink" title="1.1.2 全局说明"></a>1.1.2 全局说明</h5><p>讲解产品的全局性功能的说明</p>
+<p>如“状态维持与恢复”功能</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">状态的维持与恢复</div><div class="line">当用户退出产品时（误操作、Home键、锁屏、自动关机），产品需要维持用户操作前的状态，当用户返回产品时仍可以恢复到之前状态，并继续使用。</div><div class="line">维持状态包括流程操作、信息浏览、文本输入、文件下载。</div><div class="line">锁屏状态时，如果用户在产品中有下载任务时，仍然保持下载。</div></pre></td></tr></table></figure>
+<h5 id="1-1-3-频道功能"><a href="#1-1-3-频道功能" class="headerlink" title="1.1.3 频道功能"></a>1.1.3 频道功能</h5><p>以频道为单位，页面为子项，描述产品的频道、页面及页面模块元素的功能需求。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">1、频道名：频道介绍及需求说明</div><div class="line">2、页面1：页面介绍及需求说明</div><div class="line">2.1、页面模块1：模块功能需求说明</div><div class="line">2.1.1、页面模块1-元素1：功能说明</div><div class="line">2.1.2、页面模块1-元素2：功能说明</div><div class="line">2.2、页面模块2：模块功能需求说明</div></pre></td></tr></table></figure>
+<blockquote>
+<p>例如一个“完成”按钮，我们需要描述他完成后，系统要不要给出反馈提示(反馈提示是什么样的形式反馈，内容显示成什么，有没有内容需要调取数据库)，或者要不要跳转页面(跳转到哪个页面，这个页面是其他频道页面，还是这个功能的子页面，如果是子页面就需要再描述这个子页面的模块及元素内容)</p>
+</blockquote>
+<h5 id="1-1-4-效果图"><a href="#1-1-4-效果图" class="headerlink" title="1.1.4 效果图"></a>1.1.4 效果图</h5><p>由设计师完成的产品图，和实际开发完成的产品保真度一致</p>
+<h4 id="2-图片"><a href="#2-图片" class="headerlink" title="2.图片"></a>2.图片</h4><p>基于效果图的说明文件，将传统Word形式的功能需求说明标注在效果图上</p>
+<h4 id="3-交互原型-1"><a href="#3-交互原型-1" class="headerlink" title="3.交互原型"></a>3.交互原型</h4><p>通过Axure PR制作出产品原型后，加上元素的标注，在标注中说明功能需求，这样导出的HTML文件相比Word文档更直观易懂，是非常高效的产品需求说明方式</p>
+<blockquote>
+<p>参考</p>
+<p><a href="https://tangjie.me/blog/56.html" target="_blank" rel="external">https://tangjie.me/blog/56.html</a> </p>
+</blockquote>
+
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/04/22/《独角兽之路》读书笔记/" data-toggle="tooltip" data-placement="top"
+                           title="《独角兽之路》读书笔记">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/12/25/网络安全理论/" data-toggle="tooltip" data-placement="top"
+                           title="网络安全理论">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PRD的书写"><span class="toc-text">PRD的书写</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PRD介绍"><span class="toc-text">PRD介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PRD写作"><span class="toc-text">PRD写作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#罗列信息（信息结构图）"><span class="toc-text">罗列信息（信息结构图）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梳理需求（产品结构图）"><span class="toc-text">梳理需求（产品结构图）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-罗列出产品的功能结构"><span class="toc-text">1.罗列出产品的功能结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-从频道到页面，再细化页面功能模块和元素"><span class="toc-text">2.从频道到页面，再细化页面功能模块和元素</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-梳理"><span class="toc-text">3.梳理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型设计（界面线框图）"><span class="toc-text">原型设计（界面线框图）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-手绘原型"><span class="toc-text">1.手绘原型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-灰模原型"><span class="toc-text">2.灰模原型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-交互原型"><span class="toc-text">3.交互原型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用例模型（产品用例图）"><span class="toc-text">用例模型（产品用例图）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-用例图"><span class="toc-text">1.用例图</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-用例描述文档"><span class="toc-text">2.用例描述文档</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑流程（功能流程图）"><span class="toc-text">逻辑流程（功能流程图）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#需求文档"><span class="toc-text">需求文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-表现形式"><span class="toc-text">1.表现形式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-word"><span class="toc-text">1.1 word</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-1-结构图"><span class="toc-text">1.1.1 结构图</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-2-全局说明"><span class="toc-text">1.1.2 全局说明</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-3-频道功能"><span class="toc-text">1.1.3 频道功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-4-效果图"><span class="toc-text">1.1.4 效果图</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-图片"><span class="toc-text">2.图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-交互原型-1"><span class="toc-text">3.交互原型</span></a></li></ol></li></ol></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#PRD"
+                           title="PRD">PRD</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

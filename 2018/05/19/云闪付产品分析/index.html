@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        云闪付产品分析｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2018/05/19/云闪付产品分析/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>云闪付产品分析</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2018-05-19
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#运营"
+                           title="运营">运营</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            云闪付产品分析
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h1 id="1-产品概述"><a href="#1-产品概述" class="headerlink" title="1 产品概述"></a>1 产品概述</h1><h2 id="1-1-体验环境"><a href="#1-1-体验环境" class="headerlink" title="1.1 体验环境"></a>1.1 体验环境</h2><p>体验版本：5.1.0</p>
+<p>体验设备：iPhone 6s</p>
+<p>iOS版本：11.2</p>
+<p>体验时间：2018.5</p>
+<p>体验者：Caligo</p>
+<h2 id="1-2-产品概括"><a href="#1-2-产品概括" class="headerlink" title="1.2 产品概括"></a>1.2 产品概括</h2><p>首先云闪付既是中国银联旗下支付应用的名称，也是中国银联推出的一种以以智能手机为基础，基于NFC（近场通讯）、HCE（基于主卡的卡模拟）、TSM（可信服务管理）和Token（令牌）等技术，在银行客户端内模拟一张实体银行卡，让手机替换银行卡直接在非接触POS机进行消费的一种支付创新方式。</p>
+<p>在2016年起，移动支付就以银联、Apple pay等为代表的“闪付派”与支付宝、微信支付为代表的“扫码派”就开启了市场之争。而在发展中，支付宝、微信等“扫码派”通过各种“烧钱”的营销活动，在2017年Q1支付宝与财付通两家企业已经共同占据了移动支付市场90%的份额（易观智库数据），加上闪付派本身操作上手比较繁琐，闪付派的突围实在困难。</p>
+<p>于是在2017年5月底，银联推出了云闪付二维码产品。</p>
+<h2 id="1-3-产品定位"><a href="#1-3-产品定位" class="headerlink" title="1.3 产品定位"></a>1.3 产品定位</h2><p>笔者认为，目前的云闪付可以说是一款主打优惠，同时兼具闪付和扫码支付功能的第三方移动支付产品。</p>
+<h2 id="1-4-用户需求分析"><a href="#1-4-用户需求分析" class="headerlink" title="1.4 用户需求分析"></a>1.4 用户需求分析</h2><h3 id="1-4-1-用户画像"><a href="#1-4-1-用户画像" class="headerlink" title="1.4.1 用户画像"></a>1.4.1 用户画像</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235537%402x.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235557%402x.jpg" alt=""></p>
+<p><code>地域分布 - 蓝色为银联，绿色为支付宝 - 数据来源：百度指数</code></p>
+<p>按照省份看，云闪付的地域分布与支付宝呈现出差异性，云闪付的最热省份是河南，在热门城市里出现了贵阳和郑州，这在互联网产品中是少见的。</p>
+<p>查询相关资讯发现，云闪付在河南的推广活动是多场景的。比起广东、上海等地铁、便利店等单薄的支付场景，河南的云闪付进入到了公交地铁、校企园区、菜场及生活圈、商圈停车场等多种移动支付场景，也达到了非常显著的效果。</p>
+<p>由于云闪付在线上支付场景的弱势，线下市场将是主要战场，对于线下支付场景的考虑和争夺，将成为云闪付运营的重点考虑。</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235606%402x.jpg" alt=""></p>
+<p><code>数据来源：百度指数</code></p>
+<p>在年龄分布上，银联的一大特点是40-49岁的中年用户相较于支付宝来说占了更多的比例。</p>
+<p>究其原因，笔者思考的原因之一是这一片是支付宝尚未强势占有的份额，云闪付在其中有更多的机会。中老年群体在2018年前一直是移动支付比较忽略的部分，阿里在2018年春节提出的亲情淘宝也显示了这一点，中年群体是互联网下一个需要重点关注的群体。</p>
+<p>相对于年轻人，中年人比较传统，对新兴技术态度趋向于保守，对于安全性有更高要求，也更在乎实惠。这几点都是银联的优势，作为长期以来一直是中国境内发行的人民币支付卡唯一交易清算供应商，大众对于银联的认识一直是等同于银行的地位的，故会具备更高的信任感，而今年春节以来推出的各项大力度的优惠政策，也让用户切实感受到了实惠。</p>
+<p>总结下来，云闪付的用户集中在二三线城市的中青年群体，这可以说目前移动支付市场的蓝海，支付宝、微信支付尚未强势占领市场份额，给了云闪付有了更多的机会。</p>
+<h3 id="1-4-2-用户需求"><a href="#1-4-2-用户需求" class="headerlink" title="1.4.2 用户需求"></a>1.4.2 用户需求</h3><p>根据需求层次的深浅，将用户的需求划分为三个层次，依次为基本型需求，期望型需求以及兴奋型需求。</p>
+<ul>
+<li><strong>基本型需求</strong>：安全便捷的支付、转账</li>
+<li><strong>期望型需求</strong>：有足够多的应用场景，如水电等公共缴费；能够在支付时享受到充分的优惠</li>
+<li><strong>兴奋型需求</strong>：获得收益（理财功能）</li>
+</ul>
+<h2 id="1-5-市场现状分析"><a href="#1-5-市场现状分析" class="headerlink" title="1.5 市场现状分析"></a>1.5 市场现状分析</h2><h3 id="1-5-1-行业分析"><a href="#1-5-1-行业分析" class="headerlink" title="1.5.1 行业分析"></a>1.5.1 行业分析</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235613%402x.jpg" alt=""></p>
+<p><code>数据来源：易观千帆</code></p>
+<p>可以看到目前第三方移动金融正在逐渐增大规模，这一点在蚂蚁金服旗下余额宝、蚂蚁财富等互金产品近年来规模迅速增长得到了体现，而个人应用方面，依然占据大比例。</p>
+<p>在移动消费上，由于众多互联网产品在阿里、腾讯旗下，云闪付具有应用场景相对局限的弱势，但依然可以接入其他产品，如12306等。</p>
+<p>在移动金融上，云闪付尚未采取明确的措施，仅是作为一款支付应用，未来也将是值得发展的重要领域。</p>
+<p>而个人应用方面，云闪付采用基于手机通讯录的方式，还需要对方以该手机号注册了云闪付，并且并不提供事先的确认，这一点还是有不便之处。</p>
+<h3 id="1-5-2-市场数据"><a href="#1-5-2-市场数据" class="headerlink" title="1.5.2 市场数据"></a>1.5.2 市场数据</h3><p>相对于银联实体卡庞大的用户量，银联的活跃用户同支付宝等第三方移动支付软件还有很大的差异。</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235620%402x.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235630%402x.jpg" alt=""></p>
+<p>而在下载总量上，云闪付的安卓下载总量约为7000余万，而支付宝在2017年底已有5.2亿的用户量，微信用户量更是超越了10亿，在市场占有率这一路途上，云闪付道阻且长。</p>
+<h1 id="2-产品分析"><a href="#2-产品分析" class="headerlink" title="2 产品分析"></a>2 产品分析</h1><h2 id="2-1-产品结构图"><a href="#2-1-产品结构图" class="headerlink" title="2.1 产品结构图"></a>2.1 产品结构图</h2><p>云闪付的主要功能区分为四个：即作为首页的卡包、优惠、生活和我的这几个区域，产品结构图如下</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/%E4%BA%91%E9%97%AA%E4%BB%98.png" alt=""></p>
+<p>从上面的结构图可以发现：云闪付主打的吸引用户的特点就是种类繁多的优惠：四大一级入口之一便是优惠的信息流；在作为首页的卡包入口，也展示了线上商城、观影、商超便利等优惠信息；零碎功能里的权益也是关于优惠。</p>
+<h2 id="2-2-用户使用流程图"><a href="#2-2-用户使用流程图" class="headerlink" title="2.2 用户使用流程图"></a>2.2 用户使用流程图</h2><p>由于云闪付的功能繁多，难以进行全部列举。该部分将以云闪付的某些特色功能为例进行绘制用户使用流程图。</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6-5.png" alt=""></p>
+<p>上面列举的流程从左往右依次为支付的流程、搜索优惠信息的流程，转账的流程、登陆“我的”的流程。关于“我的“的界面和“卡包”中查看卡详情，由于涉及到身份信息与安全设置，云闪付多了一层安全验证，需要用户输入指纹密码或者手势密码才可以查看具体信息。此外，用户选择输入手势密码时，屏幕是不显示历史痕迹的，增强了安全性。</p>
+<p>关于支付设置，可以看到，和支付宝的操作是类似的，但在付款码处多了境外码的选择，这一付款码根据用户所在地区是自动展示的，但用户也可以手动切换。同时云闪付也支持小额免密支付，默认不打开，此时每笔小于等于300元的交易无需验证支付密码，打开后和支付宝额度一致，每笔小于等于1000元的交易无需验证支付密码。</p>
+<p>关于搜索优惠信息与转账功能，会在功能体验分析内进行详细描述。</p>
+<h2 id="2-3-功能体验分析"><a href="#2-3-功能体验分析" class="headerlink" title="2.3 功能体验分析"></a>2.3 功能体验分析</h2><p><strong>（1）优惠信息</strong></p>
+<p>优惠是云闪付主打的特色。在整个应用里，有繁杂的优惠信息，优惠力度不一，但不利于用户体验的事其中有许多不同的限制。许多优惠信息乍一看非常吸引人，但用户细看会发现该活动是针对某特定银行旗下的卡，有时还会对卡的等级有限制。</p>
+<p>以哈根达斯冰淇淋为例，该品牌旗下门店的优惠有花旗银行的积分礼程抵现金与民生银行周二7元享哈根达斯的优惠。</p>
+<p>看起来非常诱人，但是对想要购买冰淇淋，但卡包里并没有以上两个银行旗下卡的用户而言并没有用处，甚至从兴奋感转为失落感，反而不利于产品想要以优惠来促活的初心。</p>
+<p><strong>（2）转账</strong></p>
+<p>关于转账，云闪付提供了两种方法。第一种转账到银行卡同其他第三方支付产品的转账功能类似，同时提供了拍照读取银行卡号的便捷手段。</p>
+<p>该手段使用场景有近距离下用户给他人的银行卡转账，以及用户自己的银行卡互转的情形。使用场景局限的原因是该手段并没有读取照片的功能，对于远距离的转账并没有起到优化用户体验的作用。</p>
+<p>而对于另一种方式，即转账到通讯录，需要填写收款人的注册手机号，或者从通讯录中选择手机号码。当用户未注册云闪付时，会有警告标示error：“对方为非注册用户，无法完成转账”。由于云闪付的用户量还比较小，这一方式有比较大的局限性。</p>
+<p><strong>（3）闪付</strong></p>
+<p>闪付是不同于扫码的另一种移动支付方式。首先用户需要有一张支持闪付的卡，特征是在卡面上有Quick Pass闪付标记。然后用户选择添卡后，打开相机扫描卡后添加卡，之后在查看卡详情里选择开通手机闪付。之后的操作，安卓手机需要开启NFC功能，根据不同卡的种类有不同的验证方式，验证完成后即显示完成开通闪付。苹果用户则需要在钱包中的完成同一张卡的Apple Pay添加，方式类似于云闪付的添加卡。</p>
+<p>另外关于iOS系统，云闪付在给银行卡添加闪付功能时，并没有考虑到用户没有在Apple Pay中添加银行卡的情况，应该是默认了用户已经添加，自动附上手机闪付功能，缺少引导用户前往Apple Pay进行后续操作的提示。</p>
+<p>流程图如下：</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235719%402x.jpg" alt=""></p>
+<p>开通闪付后，用户在按亮手机屏幕后，把手机放在带闪付功能的POS机前就能成功支付，无需联网或者打开相关APP。</p>
+<p>使用场景如，当收银员在POS机上输入支付信息后，消费者只需把手机放近POS机，再进行指纹支付或者密码支付（也可设置小额免密支付），听到提示音后即支付成功。</p>
+<p>闪付相对于扫码来说有以下几大优势：</p>
+<ol>
+<li><p>更具安全性</p>
+<p>​    以“扫码派”的微信支付和“闪付派”的ApplePay为例，微信将持卡人信息储存在APP内，而仅在用户接受条款中表明其不会泄露用户隐私。但若持卡人手机遭到黑客入侵，用户信息泄露甚至被盗用的风险依旧存在。与微信支付相对比，ApplePay不将持卡人信息储存在手机上。使用者将银行卡与ApplePay相关联时，会生成一个“替身卡”，即便信息泄露，也会因识别不了银行卡号、密码等信息得到一堆乱码。闪付通过动态密钥、云端验证等多重安全保障，真实银行卡号在支付时被隐藏，持卡人隐私得到有效保护。<br>​    另外，银联现有“失卡保障计划”,如果客户将手机丢失，客户可在银行挂失虚拟卡，因丢失手机发生的盗刷损失可获得与中国银联合作的保险公司的赔付。</p>
+</li>
+<li><p>更具便捷性</p>
+<p>扫码支付时，如果手机处于无信号或者周边环境黑暗的状态，由于亮度不够等原因不能成功识别二维码，从而影响支付。闪付支付时则对手机联网状况和环境光线亮度没有特定要求，只要在使用时将手机的近场支付功能开启，将手机移近POS机即可。</p>
+</li>
+</ol>
+<p>闪付同样也面临着许多劣势：</p>
+<ol>
+<li><p>支付缺乏场景化</p>
+<p>大多数人都还不了解闪付这种新型支付方式。不论是Apple pay还是MI Pay，现在的使用量还比较小。用户在习惯扫码这一支付方式后，对于闪付这一方式了解的动力不足。</p>
+</li>
+<li><p>线下商家难以推广</p>
+<p>许多收银员本身对闪付这一支付方式不了解。尽管许多POS机支持闪付，收银员自身了解不透彻，甚至不会操作，从而难以推广。</p>
+</li>
+</ol>
+<p><strong>（4）查看多家银行卡余额</strong></p>
+<p>云闪付已支持工行、中行、邮储、中信、兴业、浦发、光大、北京银行和上海银行9家银行借记卡余额查询。</p>
+<p>这一点是云闪付与其他第三方移动支付应用的差异化功能。解决了用户手持多家银行借记卡，却需要一一登陆手机银行查询余额、在小额支付时不料余额不足的尴尬、按月还贷却记错卡中余额导致信用记录受损等痛点。</p>
+<p>由于笔者手中没有以上9家银行的卡片，并没有对查看余额这一功能进行体验，下面评论分析中会进行补充。</p>
+<h2 id="2-4-小结"><a href="#2-4-小结" class="headerlink" title="2.4 小结"></a>2.4 小结</h2><p>通过以上几点功能的介绍不难发现，云闪付的功能有如下一些特点：</p>
+<ul>
+<li>以优惠信息作为吸引客户，促活的主要手段</li>
+<li>基础转账功能由于用户量小等原因，导致用户体验落后，尚有改进之处</li>
+<li>使用场景少依然是目前面临的最大问题</li>
+<li>闪付功能普及度不高</li>
+</ul>
+<h1 id="3-用户意见"><a href="#3-用户意见" class="headerlink" title="3 用户意见"></a>3 用户意见</h1><h2 id="3-1-用户总体的满意度并不高"><a href="#3-1-用户总体的满意度并不高" class="headerlink" title="3.1 用户总体的满意度并不高"></a>3.1 用户总体的满意度并不高</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235724%402x.jpg" alt=""></p>
+<p>不到3星的C型评分，对于一款银联旗下的大投资的主推应用来说，实际上成绩是比较差了。C型的评分也侧面反应了应用有优秀之处，但还存在许多问题。</p>
+<h2 id="3-2-卡面识别准确率低"><a href="#3-2-卡面识别准确率低" class="headerlink" title="3.2 卡面识别准确率低"></a>3.2 卡面识别准确率低</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235731%402x.jpg" alt=""></p>
+<p>笔者在重新体验云闪付的添加卡功能时，发现在光线较暗的环境下，卡号的识别准确率也在下降，最后的几位数字在扫描读取了2次，开启闪光灯又扫描读取一次的情况下还是无法准确获取。而关于卡面识别的准确率，笔者的银行卡卡面也未能成功识别，在自主选择卡面时，也发现并未收录该卡面。</p>
+<p>综上，云闪付在计算机视觉技术方面有待加强，另外既然增添了卡面这一项功能，需完整收录相关卡面并及时与相关银行联系更新。</p>
+<h2 id="3-3-许多号码段收不到短信"><a href="#3-3-许多号码段收不到短信" class="headerlink" title="3.3 许多号码段收不到短信"></a>3.3 许多号码段收不到短信</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235738%402x.jpg" alt=""></p>
+<p>许多用户提到号码段不能收到短信的问题，对于经常需要进行手机验证的支付类应用来说，这是非常严重的bug，严重影响到用户的使用体验和留存。</p>
+<h2 id="3-4-还款功能"><a href="#3-4-还款功能" class="headerlink" title="3.4 还款功能"></a>3.4 还款功能</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235746%402x.jpg" alt=""></p>
+<p>许多用户关于云闪付的还款功能提出了意见。到账时间的确应当引起重视，在这方面做到实时到账，将会是相对于微信与支付宝的一大优势。</p>
+<h1 id="4-如果我是PM"><a href="#4-如果我是PM" class="headerlink" title="4 如果我是PM"></a>4 如果我是PM</h1><h2 id="4-1-关于转账功能的改进"><a href="#4-1-关于转账功能的改进" class="headerlink" title="4.1 关于转账功能的改进"></a>4.1 关于转账功能的改进</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235753%402x.jpg" alt=""></p>
+<p>图一为转账到通讯录，图二三为转账到银行卡</p>
+<p>在转账服务上，由于用户量不够的原因，初心是通过通讯录进行便捷转账的服务却无法成功完成。</p>
+<p>对此提升用户体验的方式只能是大规模的拉新活动。云闪付从2018年伊始就斥上亿推广资金开展了推荐好友拉新的活动。但根据评论和资料，推广过程中遭遇了羊毛党，本身注册流程较为繁琐且要求新用户7天内使用云闪付完成一笔二维码交易的邀请机制对于二三线城市和小城镇用户不友好的多种阻碍。推广虽然已经具备很大的成效，用户量达到了大幅度的提升，但是线下使用场景的构建依然是云闪付面临的大问题。</p>
+<p>关于转账到银行卡，图三的转账相机扫描功能，首先要改进的便是其识别准确率，其次需增加本地相册图片识别，最优解是能识别手写银行卡号，真正做到解放用户输入银行账号的麻烦。</p>
+<h2 id="4-2-关于闪付功能的引导"><a href="#4-2-关于闪付功能的引导" class="headerlink" title="4.2 关于闪付功能的引导"></a>4.2 关于闪付功能的引导</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235804%402x.jpg" alt=""></p>
+<p><code>修改示意</code></p>
+<p>云闪付依然保留着闪付功能，但目前改为主打扫码支付，闪付功能的入口较深，且没有相应的引导。</p>
+<p>笔者认为，既然选择保留了这一功能，就要对用户有清晰的引导。由上的功能体验分析中，可以发现安卓用户的流程还是比较清晰的，但对于iOS用户来说则有些不知所措。故笔者建议在卡详情底部给出具体的闪付的操作引导信息。</p>
+<h2 id="4-3-关于优惠信息的改进"><a href="#4-3-关于优惠信息的改进" class="headerlink" title="4.3 关于优惠信息的改进"></a>4.3 关于优惠信息的改进</h2><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/Jietu20180520-235826%402x.jpg" alt=""></p>
+<p>可以看到，云闪付在不同地方都强调了优惠信息。但是信息繁杂，并且前文提到，很多活动对于用户来说并不满足参与条件。</p>
+<p>笔者建议对于优惠信息，改善排序算法，首先以用户卡列表中的卡为标准进行筛选，再根据距离等对用户进行更精准的推荐。</p>
+<p>示例：某用户的卡包里拥有交通银行、建设银行、招商银行的银行卡。</p>
+<p>则对于该用户的优惠界面，首先关于</p>
+<p>而在商场中，对于旗舰店也应当有相应的服装、彩妆、护肤等类别细分。</p>
+<h2 id="4-4-增加理财功能"><a href="#4-4-增加理财功能" class="headerlink" title="4.4 增加理财功能"></a>4.4 增加理财功能</h2><p>互联网金融这几年形势大好，用户逐渐接纳，甚至习惯互金理财。在支付宝、微信钱包、甚至如交通银行等传统银行业，都推出相应的活期理财产品招徕用户。</p>
+<p>云闪付作为背靠银联的主力互联网产品，具有先天的优势来提供各大行的金融理财产品信息，在应用内实现对多家银行理财产品进行对比，购买多家银行理财产品。</p>
+<p>在支付宝中，财富作为一级路口出现在应用中，直接体现了其在支付宝战略中的重要性。用户使用支付类产品，基本需求是安全便捷支付，期望需求是能省钱，兴奋需求就是能赚钱。用户对于支付宝旗下余额宝的追捧，被限制购买后的抢手情形就是一个典型。</p>
+<p>综上，云闪付作为一款移动支付产品，在理财战略布置上需要尽快跟上步伐。</p>
+<h2 id="4-5-运营推广建议"><a href="#4-5-运营推广建议" class="headerlink" title="4.5 运营推广建议"></a>4.5 运营推广建议</h2><p><a href="http://news.yktworld.com/201805/201805180942225621.html" target="_blank" rel="external">银联发布15类支付场景受理终端设计指引</a></p>
+<p>在笔者动笔写这篇产品分析时，银联发布了他们关于支付场景的具体设计。</p>
+<blockquote>
+<p>​    通过加快手机闪付、二维码支付等一系列移动支付产品的受理环境建设，使云闪付在公交地铁、校企园区、菜场及生活圈、商圈停车场等多个便民场景取得丰硕成果，同时在公交地铁、交通罚没、医疗健康、菜场、公共缴费、校园、食堂、自助售货、超市便利、餐饮等领域，银联成功打造了移动支付十大便民场景。</p>
+<p>　　本次银联发布的《指引》进一步细化了场景分类和定义，15类支付场景包括地铁、公交、食堂、菜场、景区、公共服务缴费、医疗、自动售货机、高速公路、充电桩、出租车、加油(汽)站、零售与便利店、餐饮、停车场。</p>
+</blockquote>
+<p>在这些支付场景中，我认为校企、医院、商圈、景区等区域是重点推广区域。在这几大区域中，人口日流动性强，且人口密集。</p>
+<p>对此可以参考翼支付的运营手段，电信旗下的翼支付主打校园推广，培养优秀的种子用户。大学生初入校园，随录取通知收到的便是寄来的银行卡与电话卡。在开学时候进行云闪付推广，并就地进行使用指导可以有效地培养用户，而大学生本身的社交属性也可以将云闪付传播给亲友。</p>
+<p>而医院、景区，由医院闲置的自助挂号机，开通网上预约的景区依然有许多人排队买票等现实场景可以看出，更多的问题是用户对操作的陌生。笔者建议，在排号、等待区可由推广人员进行指导操作，体会到切实的便捷和优惠后，能有效帮助用户养成支付习惯。</p>
+<h2 id="4-6-与羊毛党的斗争"><a href="#4-6-与羊毛党的斗争" class="headerlink" title="4.6 与羊毛党的斗争"></a>4.6 与羊毛党的斗争</h2><h1 id="5-总结"><a href="#5-总结" class="headerlink" title="5 总结"></a>5 总结</h1><p>云闪付在经过年初几个亿资金的大规模推广后，逐渐进入大众视野，也离亿级用户量越来越近。在目前第三方支付政策逐渐收紧的态势下，银联作为央行青睐的具备合法资质的清算机构天生具有政策优势。而抛开政策优势，以及针对支付场景的运营手段，用户体验依然是产品的第一要素，对于云闪付，产品需要优化的地方还有许多。</p>
+
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/05/21/有道云笔记产品分析/" data-toggle="tooltip" data-placement="top"
+                           title="有道云笔记产品分析">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/04/28/《增长黑客》读书笔记/" data-toggle="tooltip" data-placement="top"
+                           title="《增长黑客》读书笔记">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-产品概述"><span class="toc-text">1 产品概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-体验环境"><span class="toc-text">1.1 体验环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-产品概括"><span class="toc-text">1.2 产品概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-产品定位"><span class="toc-text">1.3 产品定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-用户需求分析"><span class="toc-text">1.4 用户需求分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-1-用户画像"><span class="toc-text">1.4.1 用户画像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-2-用户需求"><span class="toc-text">1.4.2 用户需求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-市场现状分析"><span class="toc-text">1.5 市场现状分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-1-行业分析"><span class="toc-text">1.5.1 行业分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-2-市场数据"><span class="toc-text">1.5.2 市场数据</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-产品分析"><span class="toc-text">2 产品分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-产品结构图"><span class="toc-text">2.1 产品结构图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-用户使用流程图"><span class="toc-text">2.2 用户使用流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-功能体验分析"><span class="toc-text">2.3 功能体验分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-小结"><span class="toc-text">2.4 小结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-用户意见"><span class="toc-text">3 用户意见</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-用户总体的满意度并不高"><span class="toc-text">3.1 用户总体的满意度并不高</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-卡面识别准确率低"><span class="toc-text">3.2 卡面识别准确率低</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-许多号码段收不到短信"><span class="toc-text">3.3 许多号码段收不到短信</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-还款功能"><span class="toc-text">3.4 还款功能</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-如果我是PM"><span class="toc-text">4 如果我是PM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-关于转账功能的改进"><span class="toc-text">4.1 关于转账功能的改进</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-关于闪付功能的引导"><span class="toc-text">4.2 关于闪付功能的引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-关于优惠信息的改进"><span class="toc-text">4.3 关于优惠信息的改进</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-增加理财功能"><span class="toc-text">4.4 增加理财功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-运营推广建议"><span class="toc-text">4.5 运营推广建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-6-与羊毛党的斗争"><span class="toc-text">4.6 与羊毛党的斗争</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-总结"><span class="toc-text">5 总结</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#产品"
+                           title="产品">产品</a>
+                        
+                        <a class="tag" href="/tags/#运营"
+                           title="运营">运营</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
