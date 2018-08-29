@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="caligo# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://wx2.sinaimg.cn/mw690/0060lm7Tly1ftzsmvll4vj304g04gwey.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Caligo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        阅读手扎-智能web算法｜雾匣子
+        
+    </title>
+
+    <link rel="canonical" href="http://caligo.cc/2018/08/29/阅读手扎-智能web算法/">
+    <!-- 加载gitment的css和js文件 -->
+    <link rel="stylesheet"href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://raw.githubusercontent.com/CaligoZ/img/master/20180806104837.png')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Caligo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/My-Works/">My Works</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://wx3.sinaimg.cn/mw690/0060lm7Tly1fqrfnkrudjj31ks0lyq98.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>阅读手扎-智能web算法</h1>
+                    
+                    <span class="meta">
+                         作者 Caligo
+                        <span>
+                          日期 2018-08-29
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#阅读手札"
+                           title="阅读手札">阅读手札</a>
+                        
+                        <a class="tag" href="/tags/#人工智能"
+                           title="人工智能">人工智能</a>
+                        
+                        <a class="tag" href="/tags/#算法"
+                           title="算法">算法</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            阅读手扎-智能web算法
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>#阅读手札-智能web算法</p>
+<p>未完待续</p>
+<h2 id="0-一些名词"><a href="#0-一些名词" class="headerlink" title="0 一些名词"></a>0 一些名词</h2><h2 id="1-什么是智能web"><a href="#1-什么是智能web" class="headerlink" title="1 什么是智能web"></a>1 什么是智能web</h2><h3 id="1-1-应用的意义"><a href="#1-1-应用的意义" class="headerlink" title="1.1 应用的意义"></a>1.1 应用的意义</h3><blockquote>
+<p>系统在做出反馈时回考虑到整个系统中所有的用户在不同时间的输入和行为，并对其他各宗可能有用的信息加以利用</p>
+</blockquote>
+<p>​    周前有在<36氪>看到的一篇文章，作者强调了算法对于公司的重要性。虽然有些夸大其中的作用，但头条系对推荐算法的应用确实比较强，投入也很多。作者指出了腾讯内未来的发展趋势应当是信息找人，不论是现在电商的推荐还是社会资讯，系统应该都有一套体制针对不同的用户真正做到千人千面的地步。</36氪></p>
+<p>​    个人体验中手淘首页是比较明显的，针对每个用户在手淘首页的banner广告有不同的推荐，常常是用户经常逛的店铺等。笔者拿家里长辈的手机刷淘宝推荐的时候也看到了这个明显差异。</p>
+<p>​    但同时，也有不少用户对这些技术产生了恐惧，“生活好像被这些大厂给监控了”，厂家对于技术的应用，可能也需要把控到一个度。</p>
+<p>​    需要做进一步的思考，是否要给用户这个on/off的开关，或者说，用户是否知道他们要什么，对技术的恐惧和信息找人、千人千面的技术运用推广，哪一个更切中用户的内心呢？</p>
+<h3 id="1-2-应用实例"><a href="#1-2-应用实例" class="headerlink" title="1.2 应用实例"></a>1.2 应用实例</h3><p>搜索引擎、电商、Netfix（视频类）、predict Wall Street（股票指数）、</p>
+<h3 id="1-3-构建智能web应用的基本要素"><a href="#1-3-构建智能web应用的基本要素" class="headerlink" title="1.3 构建智能web应用的基本要素"></a>1.3 构建智能web应用的基本要素</h3><ul>
+<li><p>内容聚合</p>
+</li>
+<li><p>参考结构</p>
+</li>
+<li><p>具有学习能力，且能处理不确定性的算法</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829113319.png" alt=""></p>
+<p>所以什么样的应用受益于智能，首先要看的就是他的内容是否可聚合，有关联性。从社交网络、门户网站、wiki、文件分享网站到网络游戏，这本书所介绍的技术都能应用到其中并大放异彩。</p>
+</li>
+</ul>
+<h3 id="1-4-构建方式"><a href="#1-4-构建方式" class="headerlink" title="1.4 构建方式"></a>1.4 构建方式</h3><ul>
+<li>审查应用的功能<ul>
+<li>用户使用的目的</li>
+<li>如何吸引用户</li>
+<li>如何增加商业价值</li>
+</ul>
+</li>
+<li>数据<ul>
+<li>来自内部的数据够不够用？</li>
+<li>需要更多数据吗？怎么拿来这些数据</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829114630.png" alt=""></p>
+<h3 id="1-5-八个误区"><a href="#1-5-八个误区" class="headerlink" title="1.5 八个误区"></a>1.5 八个误区</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829115515.png" alt=""></p>
+<p>不要完全相信你的智能系统</p>
+<p>##2 搜索</p>
+<p>​    接下来的内容，作者介绍了一些历史和现行的算法，作为产品方向的笔者未对其进行详细的实习等，阅读目的是为了了解算法实现思路，实际上能有时间和能力对算法进行一一了解会是一件更好的体会思路，便于和技术交流的方式。</p>
+<h3 id="2-1-Lucene"><a href="#2-1-Lucene" class="headerlink" title="2.1 Lucene"></a>2.1 Lucene</h3><p>成熟的项目，目前仍在使用并扩展</p>
+<h3 id="2-2-PageRank"><a href="#2-2-PageRank" class="headerlink" title="2.2 PageRank"></a>2.2 PageRank</h3><p>链接分析，通过一个网页自身被链接的数目加其权重，使其排序在前</p>
+<p>书中还展示了参数的影响</p>
+<h3 id="2-3-智能概率技术"><a href="#2-3-智能概率技术" class="headerlink" title="2.3 智能概率技术"></a>2.3 智能概率技术</h3><p>NaiveBayes朴素贝叶斯分类器</p>
+<h3 id="2-4-DocRank"><a href="#2-4-DocRank" class="headerlink" title="2.4 DocRank"></a>2.4 DocRank</h3><p>处理非网页的文件，未应用披露，抛砖引玉式的启发。</p>
+<h2 id="3-推荐系统"><a href="#3-推荐系统" class="headerlink" title="3 推荐系统"></a>3 推荐系统</h2><p>​    系统如何影响你的选择，如何给你选择，从传统不断输出信息来期望影响你的偏好到基于你的偏好诱导你去选择。在推荐系统中，了解到协同过滤和基于内容的推荐引擎。推荐内容需要满足两点，一是<strong>命中用户的偏好</strong>，而是<strong>避开用户不喜欢的内容</strong>。</p>
+<h3 id="3-1-定义"><a href="#3-1-定义" class="headerlink" title="3.1 定义"></a>3.1 定义</h3><p>通过距离来类定义相似度</p>
+<ul>
+<li>距离&gt;=0</li>
+<li>距离为0=相似度为1；距离为1，相似度为0</li>
+<li>对称性</li>
+</ul>
+<p><strong>协同过滤</strong></p>
+<ol>
+<li>计算用户或条目间的相似度</li>
+<li>根据其他用户评分的加权平均值来计算某个用户对一个他未评分条目的预测评分</li>
+</ol>
+<p><strong>基于内容的推荐</strong></p>
+<ol>
+<li>依赖用户间、条目间或者用户与条目间内容的相似性</li>
+<li>即使没有评分数据也可以度量两个文档之间的距离</li>
+</ol>
+<h3 id="3-2-相似度的计算"><a href="#3-2-相似度的计算" class="headerlink" title="3.2 相似度的计算"></a>3.2 相似度的计算</h3><ol>
+<li>朴素相似度 - 欧几里得距离</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829145754.png" alt=""></p>
+<ol>
+<li><p>双曲正切函数</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829150247.png" alt=""></p>
+</li>
+<li><p>雅可比相似度</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829151307.png" alt=""></p>
+</li>
+</ol>
+<h3 id="3-3-基于相似用户的推荐"><a href="#3-3-基于相似用户的推荐" class="headerlink" title="3.3 基于相似用户的推荐"></a>3.3 基于相似用户的推荐</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829152107.png" alt=""></p>
+<h3 id="3-4-示例"><a href="#3-4-示例" class="headerlink" title="3.4 示例"></a>3.4 示例</h3><p><strong>MyDiggSpace.com</strong></p>
+<ol>
+<li>通过用户间相似度及用户的内容相似度来寻找相似用户</li>
+<li>通过用户-条目-内容、用户、条目相似度来做出推荐</li>
+</ol>
+<p>组合多个推荐系统</p>
+<p><strong>Netflix</strong></p>
+<p>大型推荐系统 - 依赖 基于条目的协同过滤推荐器</p>
+<ol>
+<li><p><strong>数据标准化</strong></p>
+</li>
+<li><p>邻居的选择</p>
+</li>
+<li><p><strong>决定邻居的权重</strong></p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829171639.png" alt=""></p>
+</li>
+</ol>
+<h3 id="3-5-大规模实现与评估"><a href="#3-5-大规模实现与评估" class="headerlink" title="3.5 大规模实现与评估"></a>3.5 大规模实现与评估</h3><p><strong>RMSE 均方根误差</strong></p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829174712.png" alt=""></p>
+<p><strong>机器精度</strong></p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829174643.png" alt=""></p>
+<h2 id="4-聚类：事物的分组"><a href="#4-聚类：事物的分组" class="headerlink" title="4 聚类：事物的分组"></a>4 聚类：事物的分组</h2><h3 id="4-1-聚类的需求和意义"><a href="#4-1-聚类的需求和意义" class="headerlink" title="4.1 聚类的需求和意义"></a>4.1 聚类的需求和意义</h3><p>对有多个属性的记录条目，一般的sql操作较难达成目的</p>
+<p>给出了sql和java数组尝试操作的事例</p>
+<p>下面这段话指出了<strong>聚类属于无监督学习</strong>，我觉得很重要</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829175746.png" alt=""></p>
+<h3 id="4-2-基于分组结构"><a href="#4-2-基于分组结构" class="headerlink" title="4.2 基于分组结构"></a>4.2 基于分组结构</h3><ul>
+<li><p>层次</p>
+<ul>
+<li><p>凝聚型层次</p>
+</li>
+<li><p>分裂型层次</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829180553.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>划分</p>
+<ul>
+<li>k-means <code>迭代优化</code></li>
+<li>MST最小生成树-划分版</li>
+<li>最近邻居算法-划分版</li>
+</ul>
+<p><code>两种基本思路：概念建模和迭代优化</code></p>
+</li>
+</ul>
+<h3 id="4-3-基于数据类型和结构"><a href="#4-3-基于数据类型和结构" class="headerlink" title="4.3 基于数据类型和结构"></a>4.3 基于数据类型和结构</h3><h2 id="5-分类：把事物放在它该在的位置"><a href="#5-分类：把事物放在它该在的位置" class="headerlink" title="5 分类：把事物放在它该在的位置"></a>5 分类：把事物放在它该在的位置</h2><h2 id="6-分类器组合"><a href="#6-分类器组合" class="headerlink" title="6 分类器组合"></a>6 分类器组合</h2><h2 id="7-智能技术汇集"><a href="#7-智能技术汇集" class="headerlink" title="7 智能技术汇集"></a>7 智能技术汇集</h2>
+                <hr>
+                
+
+
+                <!--载入js，在</body>之前插入即可-->
+                <!--Leancloud 操作库:-->
+                <div class="comment"></div>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <!--Valine 的核心代码库-->
+                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <script>
+                    new Valine({
+                      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+                    av: AV, 
+                     el: '.comment',
+                    app_id: 'nRC4lno6ufLPkYiotCFiKcA8-gzGzoHsz', // 这里填写上面得到的APP ID
+                    app_key: 'qhKBOdDxpAGo4amHf5VP6WBd', // 这里填写上面得到的APP KEY
+                    placeholder: 'ヾﾉ≧∀≦)o', // 留言框占位提示文字
+                });
+                </script>
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/08/13/[阅读手札]ToB产品从0到1/" data-toggle="tooltip" data-placement="top"
+                           title="阅读手札-ToB产品从0到1">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-一些名词"><span class="toc-text">0 一些名词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-什么是智能web"><span class="toc-text">1 什么是智能web</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-应用的意义"><span class="toc-text">1.1 应用的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-应用实例"><span class="toc-text">1.2 应用实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-构建智能web应用的基本要素"><span class="toc-text">1.3 构建智能web应用的基本要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-构建方式"><span class="toc-text">1.4 构建方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-八个误区"><span class="toc-text">1.5 八个误区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Lucene"><span class="toc-text">2.1 Lucene</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-PageRank"><span class="toc-text">2.2 PageRank</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-智能概率技术"><span class="toc-text">2.3 智能概率技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-DocRank"><span class="toc-text">2.4 DocRank</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-推荐系统"><span class="toc-text">3 推荐系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-定义"><span class="toc-text">3.1 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-相似度的计算"><span class="toc-text">3.2 相似度的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-基于相似用户的推荐"><span class="toc-text">3.3 基于相似用户的推荐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-示例"><span class="toc-text">3.4 示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-大规模实现与评估"><span class="toc-text">3.5 大规模实现与评估</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-聚类：事物的分组"><span class="toc-text">4 聚类：事物的分组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-聚类的需求和意义"><span class="toc-text">4.1 聚类的需求和意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-基于分组结构"><span class="toc-text">4.2 基于分组结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-基于数据类型和结构"><span class="toc-text">4.3 基于数据类型和结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-分类：把事物放在它该在的位置"><span class="toc-text">5 分类：把事物放在它该在的位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-分类器组合"><span class="toc-text">6 分类器组合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-智能技术汇集"><span class="toc-text">7 智能技术汇集</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#阅读手札"
+                           title="阅读手札">阅读手札</a>
+                        
+                        <a class="tag" href="/tags/#人工智能"
+                           title="人工智能">人工智能</a>
+                        
+                        <a class="tag" href="/tags/#算法"
+                           title="算法">算法</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://blog.xieldy.cn">Xieldy</a></li>
+                        
+                        <li><a href="http://barriery.cn">Barriery</a></li>
+                        
+                        <li><a href="http://a2chitect.cn">Architect</a></li>
+                        
+                        <li><a href="http://www.k0rz3n.com">K0rz3n</a></li>
+                        
+                        <li><a href="http://www.math1as.com">Math1as</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/caligo-">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CaligoZ">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Caligo 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://caligo.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fqqldvlmfnj30bt0btabt.jpg">
+</body>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

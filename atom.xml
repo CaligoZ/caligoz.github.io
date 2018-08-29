@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://caligo.cc/"/>
-  <updated>2018-08-12T17:08:32.218Z</updated>
+  <updated>2018-08-29T10:10:13.616Z</updated>
   <id>http://caligo.cc/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>阅读手扎-智能web算法</title>
+    <link href="http://caligo.cc/2018/08/29/%E9%98%85%E8%AF%BB%E6%89%8B%E6%89%8E-%E6%99%BA%E8%83%BDweb%E7%AE%97%E6%B3%95/"/>
+    <id>http://caligo.cc/2018/08/29/阅读手扎-智能web算法/</id>
+    <published>2018-08-29T02:39:18.000Z</published>
+    <updated>2018-08-29T10:10:13.616Z</updated>
+    
+    <content type="html"><![CDATA[<p>#阅读手札-智能web算法</p><p>未完待续</p><h2 id="0-一些名词"><a href="#0-一些名词" class="headerlink" title="0 一些名词"></a>0 一些名词</h2><h2 id="1-什么是智能web"><a href="#1-什么是智能web" class="headerlink" title="1 什么是智能web"></a>1 什么是智能web</h2><h3 id="1-1-应用的意义"><a href="#1-1-应用的意义" class="headerlink" title="1.1 应用的意义"></a>1.1 应用的意义</h3><blockquote><p>系统在做出反馈时回考虑到整个系统中所有的用户在不同时间的输入和行为，并对其他各宗可能有用的信息加以利用</p></blockquote><p>​    周前有在<36氪>看到的一篇文章，作者强调了算法对于公司的重要性。虽然有些夸大其中的作用，但头条系对推荐算法的应用确实比较强，投入也很多。作者指出了腾讯内未来的发展趋势应当是信息找人，不论是现在电商的推荐还是社会资讯，系统应该都有一套体制针对不同的用户真正做到千人千面的地步。</36氪></p><p>​    个人体验中手淘首页是比较明显的，针对每个用户在手淘首页的banner广告有不同的推荐，常常是用户经常逛的店铺等。笔者拿家里长辈的手机刷淘宝推荐的时候也看到了这个明显差异。</p><p>​    但同时，也有不少用户对这些技术产生了恐惧，“生活好像被这些大厂给监控了”，厂家对于技术的应用，可能也需要把控到一个度。</p><p>​    需要做进一步的思考，是否要给用户这个on/off的开关，或者说，用户是否知道他们要什么，对技术的恐惧和信息找人、千人千面的技术运用推广，哪一个更切中用户的内心呢？</p><h3 id="1-2-应用实例"><a href="#1-2-应用实例" class="headerlink" title="1.2 应用实例"></a>1.2 应用实例</h3><p>搜索引擎、电商、Netfix（视频类）、predict Wall Street（股票指数）、</p><h3 id="1-3-构建智能web应用的基本要素"><a href="#1-3-构建智能web应用的基本要素" class="headerlink" title="1.3 构建智能web应用的基本要素"></a>1.3 构建智能web应用的基本要素</h3><ul><li><p>内容聚合</p></li><li><p>参考结构</p></li><li><p>具有学习能力，且能处理不确定性的算法</p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829113319.png" alt=""></p><p>所以什么样的应用受益于智能，首先要看的就是他的内容是否可聚合，有关联性。从社交网络、门户网站、wiki、文件分享网站到网络游戏，这本书所介绍的技术都能应用到其中并大放异彩。</p></li></ul><h3 id="1-4-构建方式"><a href="#1-4-构建方式" class="headerlink" title="1.4 构建方式"></a>1.4 构建方式</h3><ul><li>审查应用的功能<ul><li>用户使用的目的</li><li>如何吸引用户</li><li>如何增加商业价值</li></ul></li><li>数据<ul><li>来自内部的数据够不够用？</li><li>需要更多数据吗？怎么拿来这些数据</li></ul></li></ul><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829114630.png" alt=""></p><h3 id="1-5-八个误区"><a href="#1-5-八个误区" class="headerlink" title="1.5 八个误区"></a>1.5 八个误区</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829115515.png" alt=""></p><p>不要完全相信你的智能系统</p><p>##2 搜索</p><p>​    接下来的内容，作者介绍了一些历史和现行的算法，作为产品方向的笔者未对其进行详细的实习等，阅读目的是为了了解算法实现思路，实际上能有时间和能力对算法进行一一了解会是一件更好的体会思路，便于和技术交流的方式。</p><h3 id="2-1-Lucene"><a href="#2-1-Lucene" class="headerlink" title="2.1 Lucene"></a>2.1 Lucene</h3><p>成熟的项目，目前仍在使用并扩展</p><h3 id="2-2-PageRank"><a href="#2-2-PageRank" class="headerlink" title="2.2 PageRank"></a>2.2 PageRank</h3><p>链接分析，通过一个网页自身被链接的数目加其权重，使其排序在前</p><p>书中还展示了参数的影响</p><h3 id="2-3-智能概率技术"><a href="#2-3-智能概率技术" class="headerlink" title="2.3 智能概率技术"></a>2.3 智能概率技术</h3><p>NaiveBayes朴素贝叶斯分类器</p><h3 id="2-4-DocRank"><a href="#2-4-DocRank" class="headerlink" title="2.4 DocRank"></a>2.4 DocRank</h3><p>处理非网页的文件，未应用披露，抛砖引玉式的启发。</p><h2 id="3-推荐系统"><a href="#3-推荐系统" class="headerlink" title="3 推荐系统"></a>3 推荐系统</h2><p>​    系统如何影响你的选择，如何给你选择，从传统不断输出信息来期望影响你的偏好到基于你的偏好诱导你去选择。在推荐系统中，了解到协同过滤和基于内容的推荐引擎。推荐内容需要满足两点，一是<strong>命中用户的偏好</strong>，而是<strong>避开用户不喜欢的内容</strong>。</p><h3 id="3-1-定义"><a href="#3-1-定义" class="headerlink" title="3.1 定义"></a>3.1 定义</h3><p>通过距离来类定义相似度</p><ul><li>距离&gt;=0</li><li>距离为0=相似度为1；距离为1，相似度为0</li><li>对称性</li></ul><p><strong>协同过滤</strong></p><ol><li>计算用户或条目间的相似度</li><li>根据其他用户评分的加权平均值来计算某个用户对一个他未评分条目的预测评分</li></ol><p><strong>基于内容的推荐</strong></p><ol><li>依赖用户间、条目间或者用户与条目间内容的相似性</li><li>即使没有评分数据也可以度量两个文档之间的距离</li></ol><h3 id="3-2-相似度的计算"><a href="#3-2-相似度的计算" class="headerlink" title="3.2 相似度的计算"></a>3.2 相似度的计算</h3><ol><li>朴素相似度 - 欧几里得距离</li></ol><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829145754.png" alt=""></p><ol><li><p>双曲正切函数</p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829150247.png" alt=""></p></li><li><p>雅可比相似度</p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829151307.png" alt=""></p></li></ol><h3 id="3-3-基于相似用户的推荐"><a href="#3-3-基于相似用户的推荐" class="headerlink" title="3.3 基于相似用户的推荐"></a>3.3 基于相似用户的推荐</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829152107.png" alt=""></p><h3 id="3-4-示例"><a href="#3-4-示例" class="headerlink" title="3.4 示例"></a>3.4 示例</h3><p><strong>MyDiggSpace.com</strong></p><ol><li>通过用户间相似度及用户的内容相似度来寻找相似用户</li><li>通过用户-条目-内容、用户、条目相似度来做出推荐</li></ol><p>组合多个推荐系统</p><p><strong>Netflix</strong></p><p>大型推荐系统 - 依赖 基于条目的协同过滤推荐器</p><ol><li><p><strong>数据标准化</strong></p></li><li><p>邻居的选择</p></li><li><p><strong>决定邻居的权重</strong></p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829171639.png" alt=""></p></li></ol><h3 id="3-5-大规模实现与评估"><a href="#3-5-大规模实现与评估" class="headerlink" title="3.5 大规模实现与评估"></a>3.5 大规模实现与评估</h3><p><strong>RMSE 均方根误差</strong></p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829174712.png" alt=""></p><p><strong>机器精度</strong></p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829174643.png" alt=""></p><h2 id="4-聚类：事物的分组"><a href="#4-聚类：事物的分组" class="headerlink" title="4 聚类：事物的分组"></a>4 聚类：事物的分组</h2><h3 id="4-1-聚类的需求和意义"><a href="#4-1-聚类的需求和意义" class="headerlink" title="4.1 聚类的需求和意义"></a>4.1 聚类的需求和意义</h3><p>对有多个属性的记录条目，一般的sql操作较难达成目的</p><p>给出了sql和java数组尝试操作的事例</p><p>下面这段话指出了<strong>聚类属于无监督学习</strong>，我觉得很重要</p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829175746.png" alt=""></p><h3 id="4-2-基于分组结构"><a href="#4-2-基于分组结构" class="headerlink" title="4.2 基于分组结构"></a>4.2 基于分组结构</h3><ul><li><p>层次</p><ul><li><p>凝聚型层次</p></li><li><p>分裂型层次</p><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180829180553.png" alt=""></p></li></ul></li><li><p>划分</p><ul><li>k-means <code>迭代优化</code></li><li>MST最小生成树-划分版</li><li>最近邻居算法-划分版</li></ul><p><code>两种基本思路：概念建模和迭代优化</code></p></li></ul><h3 id="4-3-基于数据类型和结构"><a href="#4-3-基于数据类型和结构" class="headerlink" title="4.3 基于数据类型和结构"></a>4.3 基于数据类型和结构</h3><h2 id="5-分类：把事物放在它该在的位置"><a href="#5-分类：把事物放在它该在的位置" class="headerlink" title="5 分类：把事物放在它该在的位置"></a>5 分类：把事物放在它该在的位置</h2><h2 id="6-分类器组合"><a href="#6-分类器组合" class="headerlink" title="6 分类器组合"></a>6 分类器组合</h2><h2 id="7-智能技术汇集"><a href="#7-智能技术汇集" class="headerlink" title="7 智能技术汇集"></a>7 智能技术汇集</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#阅读手札-智能web算法&lt;/p&gt;
+&lt;p&gt;未完待续&lt;/p&gt;
+&lt;h2 id=&quot;0-一些名词&quot;&gt;&lt;a href=&quot;#0-一些名词&quot; class=&quot;headerlink&quot; title=&quot;0 一些名词&quot;&gt;&lt;/a&gt;0 一些名词&lt;/h2&gt;&lt;h2 id=&quot;1-什么是智能web&quot;&gt;&lt;a h
+      
+    
+    </summary>
+    
+    
+      <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+    
+      <category term="人工智能" scheme="http://caligo.cc/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+      <category term="算法" scheme="http://caligo.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>阅读手札-ToB产品从0到1</title>
     <link href="http://caligo.cc/2018/08/13/%5B%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD%5DToB%E4%BA%A7%E5%93%81%E4%BB%8E0%E5%88%B01/"/>
     <id>http://caligo.cc/2018/08/13/[阅读手札]ToB产品从0到1/</id>
     <published>2018-08-12T16:52:47.000Z</published>
-    <updated>2018-08-12T17:08:32.218Z</updated>
+    <updated>2018-08-12T17:09:23.837Z</updated>
     
     <content type="html"><![CDATA[<h1 id="阅读手札-ToB产品从0到1"><a href="#阅读手札-ToB产品从0到1" class="headerlink" title="阅读手札-ToB产品从0到1"></a>阅读手札-ToB产品从0到1</h1><p>未完结，更新中</p><h2 id="一、产品立项"><a href="#一、产品立项" class="headerlink" title="一、产品立项"></a>一、产品立项</h2><blockquote><p>启示录中的9个问题</p></blockquote><figure class="highlight php"><table><tr><td class="code"><pre><div class="line"><span class="number">1.</span> 产品是什么？</div><div class="line"><span class="comment">//定义产品</span></div><div class="line"><span class="number">2.</span> 产品要解决什么问题？</div><div class="line"><span class="comment">//产品的价值</span></div><div class="line"><span class="number">2.1</span> 业务背景</div><div class="line"><span class="comment">//梳理业务流程</span></div><div class="line"><span class="number">2.2</span> 在业务流程中遇到的问题</div><div class="line"><span class="comment">//每个环节做访问，做分析</span></div><div class="line"><span class="number">2.3</span> 尝试给出解决方案</div><div class="line"><span class="number">3.</span> 为谁解决这个问题？</div><div class="line"><span class="comment">//用户、需求分析，对目标市场做一个考量</span></div><div class="line"><span class="number">4.</span> 成功的机会有多大？</div><div class="line"><span class="comment">//从市场竞争、市场容量、团队情况来分析市场规模</span></div><div class="line"><span class="number">5.</span> 抓取机会后产品有哪些愿景目标？达成愿景必要条件是什么？如何达成&amp;评价指标</div><div class="line"><span class="comment">//分阶段给出每个阶段的目标和必要条件（能够实现目标的MVP），</span></div><div class="line">    <span class="comment">//以及该阶段的考核指标</span></div><div class="line"><span class="number">6.</span> 投产比？风险和资源需求</div><div class="line">    <span class="comment">//投入分为团队工资投入、渠道投放的运营营销预算、分析产出收益、</span></div><div class="line">    <span class="comment">//可能出现的风险以及应对策略</span></div><div class="line"><span class="number">7.</span> 大概行动计划</div><div class="line">    <span class="comment">//根据时间节点来进行目标和行动的确定</span></div><div class="line"><span class="number">8.</span> 核心团队成员</div><div class="line">    <span class="comment">//姓名、角色、职责、背景，可以在产品文档中给出，写明职责等便于联系和确认责任</span></div><div class="line"><span class="number">9.</span>融资需求</div><div class="line">    <span class="comment">//确定需融资的金额和出让的股权</span></div></pre></td></tr></table></figure><h2 id="二、产品设计"><a href="#二、产品设计" class="headerlink" title="二、产品设计"></a>二、产品设计</h2><blockquote><p>需求列表：分析、增加、思考、更新</p><p>产品需求文档&amp;原型：撰写、存放流转</p><p>需求评审会：排期、工期、每周例会站会制度</p><p>产品竞争力：创新技术融合、解决不好的地方、竞品参考、截图保留</p><p>细微体验：loading、提示</p></blockquote><figure class="highlight php"><table><tr><td class="code"><pre><div class="line"><span class="number">1.</span> 自己：建立印象，做竞品分析，先多截图，多使用，梳理出对方处理解决用户的场景，画出产品结构的脑图，也梳理出产品的主要流程</div><div class="line">   他人：深入理解业务，借鉴麦肯锡市场细分八法,对产品进行一个重构，了解实际业务个环节执行如何进行，具体有什么问题，并进行记录。</div></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180813004723.png" alt=""></p><figure class="highlight php"><table><tr><td class="code"><pre><div class="line"><span class="number">2.</span>开始建立自己的产品主流程，依据有自己产品的特点，包括的内容应该有数据产生和流转顺序，在现有业务流程的基础上做出理解后的改进。</div></pre></td></tr></table></figure><figure class="highlight php"><table><tr><td class="code"><pre><div class="line"><span class="number">3.</span>建立功能列表</div><div class="line"><span class="number">3.1</span> 拆分流程中各环节需要哪些功能，可参考竞品，从<span class="number">1</span>中进行梳理</div><div class="line"></div><div class="line"><span class="number">3.2</span> 寻找亮点竞争力，能否结合成熟先进的技术对产品赋能，提升产品性能。</div><div class="line">    <span class="comment">//热门的人工智能和区块链等技术是否能真正帮助到用户，</span></div><div class="line">    <span class="comment">//考虑到现实的成本-收益开销，而不是单纯蹭热点</span></div><div class="line"></div><div class="line">    <span class="number">3.3</span> 开始建立功能列表</div><div class="line">    功能列表（例excel）包含：</div><div class="line">    产品功能、子功能、功能描述、优先级、计划版本、备注</div></pre></td></tr></table></figure><h2 id="三、开发期间"><a href="#三、开发期间" class="headerlink" title="三、开发期间"></a>三、开发期间</h2><blockquote><p>产品资料：制作产品介绍手册、使用手册、试用账号、通知邮件短信模板；</p><p>对接资料；客服资料；销售培训、销售帮助文档；产品帮助文档-toC</p><p>产品质量：联系项目内部测试、比赛活动测试</p><p>产品规划：思考后续产品规划、竞品动态</p><p>产品之外：有什么突发情况产生的需求？</p><p>竞品问题：出现过什么问题？如何规避?</p><p>销售造势：高端Party，宣传片拍摄，新闻稿发布</p></blockquote><h2 id="四、开发完成"><a href="#四、开发完成" class="headerlink" title="四、开发完成"></a>四、开发完成</h2><blockquote><p>产品质量测试：比赛活动、项目内部试用</p><p>销售造势：新闻稿发布</p></blockquote><h2 id="五、面世售卖"><a href="#五、面世售卖" class="headerlink" title="五、面世售卖"></a>五、面世售卖</h2><blockquote><p>打造标杆客户：销售驱动</p></blockquote><h2 id="六、第1阶段运行"><a href="#六、第1阶段运行" class="headerlink" title="六、第1阶段运行"></a>六、第1阶段运行</h2><blockquote><p>售卖缺少客户案例，有产品细节问题，需求问题</p><p>产品需求变动：方法不只一种，最大投产比原则，变通方法原则</p><p>上线问题：避开高峰期，整理收集客户需求、保障产品稳定</p><p>产品经理：应变快速出方案解决问题，系统不能解决的线下解决</p><p>发布产品数据，鼓舞士气和看战果</p></blockquote><h2 id="七、第2阶段运行"><a href="#七、第2阶段运行" class="headerlink" title="七、第2阶段运行"></a>七、第2阶段运行</h2><blockquote><p>新增客户案例文档、线上案例汇集;</p><p>更新文档、培训</p><p>提效需求、发现新机会</p></blockquote><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure><blockquote><p><a href="https://www.jianshu.com/p/e3f1c9f45975" target="_blank" rel="external">ToB产品从0到1系列</a></p><p>作者：产品经理赵扬扬</p></blockquote>]]></content>
     
@@ -36,11 +65,11 @@
     </summary>
     
     
+      <category term="产品流程" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B/"/>
+    
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
-    
-      <category term="产品流程" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B/"/>
     
   </entry>
   
@@ -91,11 +120,11 @@
     </summary>
     
     
-      <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
-    
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+    
+      <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
