@@ -194,11 +194,12 @@
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
                 <p>#阅读手札-智能web算法</p>
-<p>未完待续</p>
-<h2 id="0-一些名词"><a href="#0-一些名词" class="headerlink" title="0 一些名词"></a>0 一些名词</h2><h2 id="1-什么是智能web"><a href="#1-什么是智能web" class="headerlink" title="1 什么是智能web"></a>1 什么是智能web</h2><h3 id="1-1-应用的意义"><a href="#1-1-应用的意义" class="headerlink" title="1.1 应用的意义"></a>1.1 应用的意义</h3><blockquote>
+<h2 id="0-一些名词"><a href="#0-一些名词" class="headerlink" title="0 一些名词"></a>0 一些名词</h2><p><code>分类</code> <code>聚类</code></p>
+<p><code>本体</code> <code>本体引擎</code> <code>本体管理</code> <code>朴素贝叶斯</code></p>
+<h2 id="1-什么是智能web"><a href="#1-什么是智能web" class="headerlink" title="1 什么是智能web"></a>1 什么是智能web</h2><h3 id="1-1-应用的意义"><a href="#1-1-应用的意义" class="headerlink" title="1.1 应用的意义"></a>1.1 应用的意义</h3><blockquote>
 <p>系统在做出反馈时回考虑到整个系统中所有的用户在不同时间的输入和行为，并对其他各宗可能有用的信息加以利用</p>
 </blockquote>
-<p>​    周前有在<36氪>看到的一篇文章，作者强调了算法对于公司的重要性。虽然有些夸大其中的作用，但头条系对推荐算法的应用确实比较强，投入也很多。作者指出了腾讯内未来的发展趋势应当是信息找人，不论是现在电商的推荐还是社会资讯，系统应该都有一套体制针对不同的用户真正做到千人千面的地步。</36氪></p>
+<p>​    周前有在<36氪>看到的一篇文章，作者强调了算法对于公司的重要性。腾讯的传统社交系应用时间在被头条系侵蚀，以及微视一直是个扶不起的阿斗的主要原因便是腾讯在数据的聚合和推荐算法上弱于头条。虽然有些夸大其中的作用，但头条系对推荐算法的应用确实比较强，投入也很多。作者指出了未来的发展趋势应当是信息找人，不论是现在电商的推荐还是社会资讯，系统应该都有一套体制针对不同的用户真正做到千人千面的地步。</36氪></p>
 <p>​    个人体验中手淘首页是比较明显的，针对每个用户在手淘首页的banner广告有不同的推荐，常常是用户经常逛的店铺等。笔者拿家里长辈的手机刷淘宝推荐的时候也看到了这个明显差异。</p>
 <p>​    但同时，也有不少用户对这些技术产生了恐惧，“生活好像被这些大厂给监控了”，厂家对于技术的应用，可能也需要把控到一个度。</p>
 <p>​    需要做进一步的思考，是否要给用户这个on/off的开关，或者说，用户是否知道他们要什么，对技术的恐惧和信息找人、千人千面的技术运用推广，哪一个更切中用户的内心呢？</p>
@@ -310,7 +311,127 @@
 <p><code>两种基本思路：概念建模和迭代优化</code></p>
 </li>
 </ul>
-<h3 id="4-3-基于数据类型和结构"><a href="#4-3-基于数据类型和结构" class="headerlink" title="4.3 基于数据类型和结构"></a>4.3 基于数据类型和结构</h3><h2 id="5-分类：把事物放在它该在的位置"><a href="#5-分类：把事物放在它该在的位置" class="headerlink" title="5 分类：把事物放在它该在的位置"></a>5 分类：把事物放在它该在的位置</h2><h2 id="6-分类器组合"><a href="#6-分类器组合" class="headerlink" title="6 分类器组合"></a>6 分类器组合</h2><h2 id="7-智能技术汇集"><a href="#7-智能技术汇集" class="headerlink" title="7 智能技术汇集"></a>7 智能技术汇集</h2>
+<h3 id="4-3-基于数据类型和结构"><a href="#4-3-基于数据类型和结构" class="headerlink" title="4.3 基于数据类型和结构"></a>4.3 基于数据类型和结构</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830100143.png" alt=""></p>
+<h3 id="4-4-根据数据规模的聚类算法"><a href="#4-4-根据数据规模的聚类算法" class="headerlink" title="4.4 根据数据规模的聚类算法"></a>4.4 根据数据规模的聚类算法</h3><ul>
+<li>针对大数据集的聚类算法</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830102453.png" alt=""></p>
+<ul>
+<li><p>处理大型数据库的聚类算法应具有以下特性</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830102616.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-5-基于链接的算法"><a href="#4-5-基于链接的算法" class="headerlink" title="4.5 基于链接的算法"></a>4.5 基于链接的算法</h3><p>适合用树状图数据结构来表达聚类结果</p>
+<ul>
+<li><p>单链接算法</p>
+<ul>
+<li>尽可能多的找出图中的连通分量，两点间的最小距离小于或等于相似性阈值</li>
+<li>时间和空间复杂度都是$$O(N^2)$$</li>
+</ul>
+</li>
+<li><p>平均链接算法</p>
+<ul>
+<li>控制显示度圆圈的大小</li>
+<li>检查分属两个目标聚类的两个数据点之间的平均距离是否小于相似度阈值</li>
+</ul>
+</li>
+<li><p>最小生成树算法</p>
+<ul>
+<li><p>生成树的概念复习一下</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830104537.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li><p>缺陷 - 连锁反应</p>
+<ul>
+<li>两个聚类中如果有两个点之间的距离非常近，那么无论其他的点之间的差别有多大，两个聚类都会被合并</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830103031.png" alt=""></p>
+<h3 id="4-6-k-means算法"><a href="#4-6-k-means算法" class="headerlink" title="4.6 k-means算法"></a>4.6 k-means算法</h3><ul>
+<li><p>核心 </p>
+<p>聚类的中心点，将组成聚类的元素想象成一块有质量的物体，聚类的中心点就应等同于这块物体的质量中心</p>
+</li>
+<li><p>优势</p>
+</li>
+</ul>
+<p><img src="/var/folders/sw/j3scqhns67d7_9bt6mj97w3h0000gn/T/abnerworks.Typora/image-20180830111013891.png" alt="image-20180830111013891"></p>
+<h3 id="4-7-ROCK链接型聚类"><a href="#4-7-ROCK链接型聚类" class="headerlink" title="4.7 ROCK链接型聚类"></a>4.7 ROCK链接型聚类</h3><ul>
+<li><p>优势</p>
+<p>适合于类别型数据，能很好地处理大型数据集</p>
+</li>
+<li><p>自底向上层次凝聚</p>
+</li>
+<li><p>步骤</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830121343.png" alt=""></p>
+<p><img src="/var/folders/sw/j3scqhns67d7_9bt6mj97w3h0000gn/T/abnerworks.Typora/image-20180830121439460.png" alt="image-20180830121439460"></p>
+</li>
+</ul>
+<h3 id="4-8-DBSCAN基于密度的算法"><a href="#4-8-DBSCAN基于密度的算法" class="headerlink" title="4.8 DBSCAN基于密度的算法"></a>4.8 DBSCAN基于密度的算法</h3><p>发现数据集中的聚类和噪声</p>
+<p>说明</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830135740.png" alt=""></p>
+<p>步骤：</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830135835.png" alt=""></p>
+<h3 id="4-9-超大规模数据集"><a href="#4-9-超大规模数据集" class="headerlink" title="4.9 超大规模数据集"></a>4.9 超大规模数据集</h3><p>面临的问题</p>
+<ul>
+<li><p>计算复杂性</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830135951.png" alt=""></p>
+</li>
+<li><p>数据的高纬度</p>
+<p>有许多属性，一般来说属性维度&gt;16就会带来麻烦（维度灾难）</p>
+<p>—————2018.8.30更新位置——————</p>
+</li>
+</ul>
+<h2 id="5-分类：把事物放在它该在的位置"><a href="#5-分类：把事物放在它该在的位置" class="headerlink" title="5 分类：把事物放在它该在的位置"></a>5 分类：把事物放在它该在的位置</h2><ul>
+<li><p>本体：概念、实例、属性</p>
+<p><img src="/var/folders/sw/j3scqhns67d7_9bt6mj97w3h0000gn/T/abnerworks.Typora/image-20180830141008986.png" alt="image-20180830141008986"></p>
+</li>
+<li><p>分类：统计算法、结构算法</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830141627.png" alt=""></p>
+</li>
+<li><p>回归：使用特定的模型拟合数据，预测连续变量的值</p>
+</li>
+<li><p>贝叶斯理论：结构化、概率分布、决策树</p>
+</li>
+<li><p>贝叶斯网络：贝叶斯理论+概率网络结构，描述分类问题中多个变量间的依赖关系</p>
+</li>
+<li><p>分类器的生命周期：训练、测试、在生产环境中使用</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830144258.png" alt=""></p>
+</li>
+</ul>
+<h3 id="5-1-朴素贝叶斯分类器"><a href="#5-1-朴素贝叶斯分类器" class="headerlink" title="5.1 朴素贝叶斯分类器"></a>5.1 朴素贝叶斯分类器</h3><p><a href="https://zh.wikipedia.org/wiki/朴素贝叶斯分类器" target="_blank" rel="external">wiki地址</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/25493221" target="_blank" rel="external">知乎-教你明白什么是朴素贝叶斯分类器</a></p>
+<h3 id="5-2-基于规则的分类器"><a href="#5-2-基于规则的分类器" class="headerlink" title="5.2 基于规则的分类器"></a>5.2 基于规则的分类器</h3><p>DROOLS规则引擎</p>
+<p><a href="http://www.ityouknow.com/drools/2017/08/07/drools-started.html" target="_blank" rel="external">讲解</a></p>
+<h3 id="5-3-神经网络欺诈检测"><a href="#5-3-神经网络欺诈检测" class="headerlink" title="5.3 神经网络欺诈检测"></a>5.3 神经网络欺诈检测</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830150210.png" alt=""></p>
+<p>混淆矩阵与置信区间</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/BEF3DA1C-63ED-4551-A58A-F1CDB325E7F0.png" alt=""></p>
+<h2 id="6-分类器组合"><a href="#6-分类器组合" class="headerlink" title="6 分类器组合"></a>6 分类器组合</h2><p>一个信贷价值系统的判断测试，11个属性，使用基于贝叶斯算法的分类器，神经网络分类器，一个新引入的决策树分类器</p>
+<h3 id="6-1-在同一个数据集中比较多个分类器"><a href="#6-1-在同一个数据集中比较多个分类器" class="headerlink" title="6.1 在同一个数据集中比较多个分类器"></a>6.1 在同一个数据集中比较多个分类器</h3><ul>
+<li><p>McNemar检验 - 2个分类器</p>
+</li>
+<li><p>差额比例检验 - 2个分类器</p>
+</li>
+<li><p>Cochran Q检验与F检验 - 三个及以上</p>
+</li>
+</ul>
+<h3 id="6-2-bagging：Bootstrap聚合"><a href="#6-2-bagging：Bootstrap聚合" class="headerlink" title="6.2 bagging：Bootstrap聚合"></a>6.2 bagging：Bootstrap聚合</h3><p>详细…这里看得很马虎</p>
+<p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830151356.png" alt=""></p>
+<h3 id="6-3-Boosting基础"><a href="#6-3-Boosting基础" class="headerlink" title="6.3 Boosting基础"></a>6.3 Boosting基础</h3><p><img src="https://raw.githubusercontent.com/CaligoZ/img/master/20180830151504.png" alt=""></p>
+<h2 id="7-智能技术汇集"><a href="#7-智能技术汇集" class="headerlink" title="7 智能技术汇集"></a>7 智能技术汇集</h2><p>主要是做一个智能新闻门户，汇集了多项智能技术</p>
+<p>步骤主要有：</p>
+<ol>
+<li>从互联网中获取并清洗内容<code>爬虫</code> <code>搜索</code> </li>
+<li>新闻搜索<code>rank</code></li>
+<li>分配新闻类别 <code>分类</code></li>
+<li>创建新闻组 <code>聚类</code></li>
+</ol>
+<h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8 总结"></a>8 总结</h2><ol>
+<li>k-means很常用，准备学习一下<strong>SPSS</strong></li>
+<li>智能技术汇集其实写的很好，通过一个实例对书里介绍的所有技术进行了使用，有时间多复盘，和现在做的电商类产品也有点关系（虽然要离职了）</li>
+</ol>
+
                 <hr>
                 
 
@@ -354,7 +475,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-一些名词"><span class="toc-text">0 一些名词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-什么是智能web"><span class="toc-text">1 什么是智能web</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-应用的意义"><span class="toc-text">1.1 应用的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-应用实例"><span class="toc-text">1.2 应用实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-构建智能web应用的基本要素"><span class="toc-text">1.3 构建智能web应用的基本要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-构建方式"><span class="toc-text">1.4 构建方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-八个误区"><span class="toc-text">1.5 八个误区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Lucene"><span class="toc-text">2.1 Lucene</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-PageRank"><span class="toc-text">2.2 PageRank</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-智能概率技术"><span class="toc-text">2.3 智能概率技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-DocRank"><span class="toc-text">2.4 DocRank</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-推荐系统"><span class="toc-text">3 推荐系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-定义"><span class="toc-text">3.1 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-相似度的计算"><span class="toc-text">3.2 相似度的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-基于相似用户的推荐"><span class="toc-text">3.3 基于相似用户的推荐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-示例"><span class="toc-text">3.4 示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-大规模实现与评估"><span class="toc-text">3.5 大规模实现与评估</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-聚类：事物的分组"><span class="toc-text">4 聚类：事物的分组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-聚类的需求和意义"><span class="toc-text">4.1 聚类的需求和意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-基于分组结构"><span class="toc-text">4.2 基于分组结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-基于数据类型和结构"><span class="toc-text">4.3 基于数据类型和结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-分类：把事物放在它该在的位置"><span class="toc-text">5 分类：把事物放在它该在的位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-分类器组合"><span class="toc-text">6 分类器组合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-智能技术汇集"><span class="toc-text">7 智能技术汇集</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-一些名词"><span class="toc-text">0 一些名词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-什么是智能web"><span class="toc-text">1 什么是智能web</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-应用的意义"><span class="toc-text">1.1 应用的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-应用实例"><span class="toc-text">1.2 应用实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-构建智能web应用的基本要素"><span class="toc-text">1.3 构建智能web应用的基本要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-构建方式"><span class="toc-text">1.4 构建方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-八个误区"><span class="toc-text">1.5 八个误区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Lucene"><span class="toc-text">2.1 Lucene</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-PageRank"><span class="toc-text">2.2 PageRank</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-智能概率技术"><span class="toc-text">2.3 智能概率技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-DocRank"><span class="toc-text">2.4 DocRank</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-推荐系统"><span class="toc-text">3 推荐系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-定义"><span class="toc-text">3.1 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-相似度的计算"><span class="toc-text">3.2 相似度的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-基于相似用户的推荐"><span class="toc-text">3.3 基于相似用户的推荐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-示例"><span class="toc-text">3.4 示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-大规模实现与评估"><span class="toc-text">3.5 大规模实现与评估</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-聚类：事物的分组"><span class="toc-text">4 聚类：事物的分组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-聚类的需求和意义"><span class="toc-text">4.1 聚类的需求和意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-基于分组结构"><span class="toc-text">4.2 基于分组结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-基于数据类型和结构"><span class="toc-text">4.3 基于数据类型和结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-根据数据规模的聚类算法"><span class="toc-text">4.4 根据数据规模的聚类算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-基于链接的算法"><span class="toc-text">4.5 基于链接的算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-k-means算法"><span class="toc-text">4.6 k-means算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7-ROCK链接型聚类"><span class="toc-text">4.7 ROCK链接型聚类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8-DBSCAN基于密度的算法"><span class="toc-text">4.8 DBSCAN基于密度的算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-9-超大规模数据集"><span class="toc-text">4.9 超大规模数据集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-分类：把事物放在它该在的位置"><span class="toc-text">5 分类：把事物放在它该在的位置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-朴素贝叶斯分类器"><span class="toc-text">5.1 朴素贝叶斯分类器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-基于规则的分类器"><span class="toc-text">5.2 基于规则的分类器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-神经网络欺诈检测"><span class="toc-text">5.3 神经网络欺诈检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-分类器组合"><span class="toc-text">6 分类器组合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-在同一个数据集中比较多个分类器"><span class="toc-text">6.1 在同一个数据集中比较多个分类器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-bagging：Bootstrap聚合"><span class="toc-text">6.2 bagging：Bootstrap聚合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-Boosting基础"><span class="toc-text">6.3 Boosting基础</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-智能技术汇集"><span class="toc-text">7 智能技术汇集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-总结"><span class="toc-text">8 总结</span></a></li></ol>
                 </div>
             </div>
         </div>
