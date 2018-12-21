@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://caligo.cc/"/>
-  <updated>2018-08-30T07:41:56.759Z</updated>
+  <updated>2018-12-21T09:31:45.518Z</updated>
   <id>http://caligo.cc/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些数据评价指标备忘</title>
+    <link href="http://caligo.cc/2018/12/21/data-analyze-mark/"/>
+    <id>http://caligo.cc/2018/12/21/data-analyze-mark/</id>
+    <published>2018-12-21T09:29:48.000Z</published>
+    <updated>2018-12-21T09:31:45.518Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="LoadRunner-Analysis报告"><a href="#LoadRunner-Analysis报告" class="headerlink" title="LoadRunner Analysis报告"></a>LoadRunner Analysis报告</h1><p>比较强大的是LR可以生成HTML报告和SLA报告，生成时按需选择。内容主要包括：概要、统计、事物、SLA分析和http响应统计五部分，这里主要说统计、事务、http响应。</p><p>统计</p><p>Ø Maximum Running Vusers:最大运行Vuser数,显示的信息是场景（传说中的测试用例）运行时设置的Vuser用户数，但是通常实际运行的数比设置的Vuser数小。原因：LoadRunner有加载时间和延迟时间。</p><p>Ø Total Throughput(bytes): 总吞吐量,场景在运行时产生的全部流量。</p><p>Ø Average Throughput(bytes/second):平均吞吐量，平均每秒的吞吐量（率）。</p><p>Ø Total Hits:总单击数，在场景运行时所有的http请求数。</p><p>Ø Average Hits per Second:平均每单击数秒</p><p>Ø View HTTP Responses Summary:HTTP相应摘要</p><p>事务(Transaction)</p><p>Ø Minimum:事务运行最短时间</p><p>Ø Average:事务运行最长时间</p><p>Ø Maximum:事务运行最长时间</p><p>Ø Std.Derviation：标准方差。方差越大，数据越离散，波动性越强。</p><p>Ø 90 percent:一个事务在执行过程中的90%花费的时间，举例：它执行了100次，对这100次执行的响应时间升序排序，90%指第90次运行时间。</p><p>Ø Pass:通过的事务数。</p><p>Ø Fail:失败的事务数。</p><p>Ø Stop:停止的事务数。</p><p>后面的待我填坑</p><hr><h1 id="Jmeter-聚合报告"><a href="#Jmeter-聚合报告" class="headerlink" title="Jmeter 聚合报告"></a>Jmeter 聚合报告</h1><p>Ø Label：每个 JMeter 的 element（例如 HTTP Request）都有一个 Name 属性，这里显示的就是 Name 属性的值</p><p>Ø Samples：表示你这次测试中一共发出了多少个请求，如果模拟10个用户，每个用户迭代10次，那么这里显示100</p><p>Ø Average：平均响应时间——默认情况下是单个 Request 的平均响应时间，当使用了 Transaction Controller 时，也可以以Transaction 为单位显示平均响应时间</p><p>Ø Median：中位数，也就是 50％ 用户的响应时间</p><p>Ø 90% Line：90％ 用户的响应时间</p><p>Ø Note：关于 50％ 和 90％ 并发用户数的含义，请参考下文</p><p><a href="http://www.cnblogs.com/jackei/archive/2006/11/11/557972.html" target="_blank" rel="external">http://www.cnblogs.com/jackei/archive/2006/11/11/557972.html</a></p><p>Ø Min：最小响应时间</p><p>Ø Max：最大响应时间</p><p>Ø Error%：本次测试中出现错误的请求的数量/请求的总数</p><p>Ø Throughput：吞吐量——默认情况下表示每秒完成的请求数（Request per Second），当使用了 Transaction Controller 时，也可以表示类似LoadRunner的 Transaction per Second 数</p><p>Ø KB/Sec：每秒从服务器端接收到的数据量，相当于LoadRunner中的Throughput/Sec</p><h4 id="Jmeter-图形结果"><a href="#Jmeter-图形结果" class="headerlink" title="Jmeter 图形结果"></a>Jmeter 图形结果</h4><p>Ø 样本数目：总共发送到服务器的请求数.</p><p>Ø 最新样本：代表时间的数字,是服务器响应最后一个请求的时间.</p><p>Ø 吞吐量：服务器每分钟处理的请求数.</p><p>Ø 平均值：总运行时间除以发送到服务器的请求数.</p><p>Ø 中间值：时间的数字,有一半的服务器响应时间低于该值而另一半高于该值.</p><p>Ø 偏离：服务器响应时间变化、离散程度测量值的大小,或者,换句话说,就是数据的分布.</p><h2 id="Web服务器指标指标："><a href="#Web服务器指标指标：" class="headerlink" title="Web服务器指标指标："></a>Web服务器指标指标：</h2><p>Ø Avg Rps: 平均每秒钟响应次数=总请求时间 / 秒数；</p><p>Ø Avg time to last byte per terstion （mstes）：平均每秒业务脚本的迭代次数，有人会把这两者混淆；</p><p>Ø Successful Rounds：成功的请求；</p><p>Ø Failed Rounds ：失败的请求；</p><p>Ø Successful Hits ：成功的点击次数；</p><p>Ø Failed Hits ：失败的点击次数；</p><p>Ø Hits Per Second ：每秒点击次数；</p><p>Ø Successful Hits Per Second ：每秒成功的点击次数；</p><p>Ø Failed Hits Per Second ：每秒失败的点击次数；</p><p>Ø Attempted Connections ：尝试链接数；</p><p>CS结构程序由于一般软件后台通常为数据库，所以我们更注重数据库的测试指标：</p><p>Ø User 0 Connections ：用户连接数，也就是数据库的连接数量；</p><p>Ø Number of deadlocks：数据库死锁；</p><p>Ø Buffer Cache hit ：数据库Cache的命中情况</p><p>当然，在实际中我们还会察看多用户测试情况下的内存，CPU，系统资源调用情况。</p><h1 id="资源指标"><a href="#资源指标" class="headerlink" title="资源指标"></a>资源指标</h1><p>Ø CPU使用率：指用户进程与系统进程消耗的CPU时间百分比，长时间情况下，一般可接受上限不超过85%。 </p><p>Ø 内存利用率：内存利用率=（1-空闲内存/总内存大小）*100%，一般至少有10%可用内存，内存使用率可接受上限为85%。</p><p>Ø 磁盘I/O: 磁盘主要用于存取数据，因此当说到IO操作的时候，就会存在两种相对应的操作，存数据的时候对应的是写IO操作，取数据的时候对应的是是读IO操作，一般使用% Disk Time（磁盘用于读写操作所占用的时间百分比）度量磁盘读写性能。</p><p>Ø 网络带宽：一般使用计数器Bytes Total/sec来度量，Bytes Total/sec表示为发送和接收字节的速率，包括帧字符在内。判断网络连接速度是否是瓶颈，可以用该计数器的值和目前网络的带宽比较。</p><h1 id="系统指标："><a href="#系统指标：" class="headerlink" title="系统指标："></a>系统指标：</h1><h4 id="（评测要求按需求规格说明书）"><a href="#（评测要求按需求规格说明书）" class="headerlink" title="（评测要求按需求规格说明书）"></a>（评测要求按需求规格说明书）</h4><p>Ø 并发用户数：某一物理时刻同时向系统提交请求的用户数。</p><p> Ø 在线用户数：某段时间内访问系统的用户数，这些用户并不一定同时向系统提交请求。</p><p>Ø 响应时间：一般包括最大响应时间和平均响应时间，响应时间包括网络上的传输时间，WEB服务器上处理时间、APP服务器上的处理时间、DB服务器上的处理时间，【注：<strong>响应时间不包括浏览器上的内容显示时间】</strong></p><p>Ø 平均响应时间：系统处理事务的响应时间的平均值。事务的响应时间是从客户端提交访问请求到客户端接收到服务器响应所消耗的时间。对于系统快速响应类页面，一般响应时间为3秒左右。</p><p>Ø 事务成功率：性能测试中，定义事务用于度量一个或者多个业务流程的性能指标，如用户登录、保存订单、提交订单操作均可定义为事务</p><p>参考：<a href="https://www.jianshu.com/p/a237defb9c2d" target="_blank" rel="external">https://www.jianshu.com/p/a237defb9c2d</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;LoadRunner-Analysis报告&quot;&gt;&lt;a href=&quot;#LoadRunner-Analysis报告&quot; class=&quot;headerlink&quot; title=&quot;LoadRunner Analysis报告&quot;&gt;&lt;/a&gt;LoadRunner Analysis报告&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="指标" scheme="http://caligo.cc/tags/%E6%8C%87%E6%A0%87/"/>
+    
+  </entry>
   
   <entry>
     <title>阅读手扎-智能web算法</title>
@@ -91,11 +114,11 @@
     </summary>
     
     
-      <category term="用户" scheme="http://caligo.cc/tags/%E7%94%A8%E6%88%B7/"/>
-    
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+    
+      <category term="用户" scheme="http://caligo.cc/tags/%E7%94%A8%E6%88%B7/"/>
     
   </entry>
   
@@ -118,11 +141,11 @@
     </summary>
     
     
+      <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
+    
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
-    
-      <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
