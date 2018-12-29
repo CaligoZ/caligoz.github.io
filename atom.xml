@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://caligo.cc/"/>
-  <updated>2018-12-28T03:10:09.471Z</updated>
+  <updated>2018-12-29T06:42:26.883Z</updated>
   <id>http://caligo.cc/</id>
   
   <author>
@@ -21,19 +21,16 @@
     <link href="http://caligo.cc/2018/12/28/password-design/"/>
     <id>http://caligo.cc/2018/12/28/password-design/</id>
     <published>2018-12-28T03:09:18.000Z</published>
-    <updated>2018-12-28T03:10:09.471Z</updated>
+    <updated>2018-12-29T06:42:26.883Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="产品设计：密码设置要求"><a href="#产品设计：密码设置要求" class="headerlink" title="产品设计：密码设置要求"></a>产品设计：密码设置要求</h1><table><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><strong>设置密码要求</strong></td><td>在“密码要求”部分的最小密码长度字段中，设置用户密码的最小长度。缺省的最小密码长度为 6 个字符。在密码中允许相同的相邻字符数字段中，设置密码中允许的相同相邻字符的数量。选中密码可包含登录标识复选框，以允许用户在密码中使用登录标识。</td></tr><tr><td><strong>设置要求的密码字符</strong></td><td>在“要求的密码字符”部分中，设置以下规范：必须包含大写字符：如果选中此复选框，那么密码必须至少包含一个大写字符。必须包含小写字符：如果选中此复选框，那么密码必须至少包含一个小写字符。必须包含数字：如果选中此复选框，那么密码必须至少包含一个数字字符。数字字符为：1 2 3 4 5 6 7 8 9 0。必须包含特殊字符（!、@、# 等）- 如果选中此复选框，那么密码必须至少包含一个特殊字符。支持的特殊字符为：! @ # $ % ^ &amp; * ( ) - _ = + \ \</td><td>[ ] { } ; : / ? . &gt; &lt;</td></tr><tr><td><strong>允许放置密码字符</strong></td><td>在允许放置密码字符字段中，设置以下规范：第一个字符可以为数字：如果选中此复选框，那么密码的首个字符可以是数字。最后一个字符可以是数字 - 如果选中此复选框，那么密码的最后一个字符可以是数字。数字字符包括：1、2、3、4、5、6、7、8、9、0。第一个字符可以为特殊字符：如果选中此复选框，那么密码的首个字符可以是特殊字符。 支持的特殊字符为：! @ # $ % ^ &amp; * ( ) - _ = + \</td><td>[ ] { } ; : / ? . &gt; &lt; . 最后字符可以为特殊字符：如果选中此复选框，那么密码的最后一个字符可以是特殊字符。 支持的特殊字符为：! @ # $ % ^ &amp; * ( ) - _ = + \ \</td><td>[ ] { } ; : / ? . &gt; &lt; .</td></tr><tr><td><strong>创建排除的密码列表</strong></td><td>在“排除的密码列表”部分中，单击新建行。在密码字段中，输入要在系统中禁止使用的密码。</td></tr><tr><td><strong>删除排除的密码</strong></td><td>在“排除的密码列表”部分中，单击要删除的已排除密码旁边的标记为待删除。</td></tr></tbody></table><p>参考：<a href="https://www.ibm.com/support/knowledgecenter/zh/SSFGJ4_7.6.0/com.ibm.mbs.doc/mbs_common/t_set_password_reqs.html" target="_blank" rel="external">https://www.ibm.com/support/knowledgecenter/zh/SSFGJ4_7.6.0/com.ibm.mbs.doc/mbs_common/t_set_password_reqs.html</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="产品设计：密码设置要求"><a href="#产品设计：密码设置要求" class="headerlink" title="产品设计：密码设置要求"></a>产品设计：密码设置要求</h1><p><strong>设置密码要求：</strong></p><p>在“密码要求”部分的最小密码长度字段中，设置用户密码的最小长度。缺省的最小密码长度为 6 个字符。在密码中允许相同的相邻字符数字段中，设置密码中允许的相同相邻字符的数量。选中密码可包含登录标识复选框，以允许用户在密码中使用登录标识。</p><p><strong>设置要求的密码字符：</strong></p><p>在“要求的密码字符”部分中，设置以下规范：必须包含大写字符：如果选中此复选框，那么密码必须至少包含一个大写字符。必须包含小写字符：如果选中此复选框，那么密码必须至少包含一个小写字符。必须包含数字：如果选中此复选框，那么密码必须至少包含一个数字字符。数字字符为：1 2 3 4 5 6 7 8 9 0。必须包含特殊字符（!、@、# 等）- 如果选中此复选框，那么密码必须至少包含一个特殊字符。支持的特殊字符为：! @ # $ % ^ &amp; * ( ) - _ = + \ | [ ] { } ; : / ? . &gt; &lt; </p><p><strong>允许放置密码字符：</strong> </p><p>在允许放置密码字符字段中，设置以下规范：第一个字符可以为数字：如果选中此复选框，那么密码的首个字符可以是数字。最后一个字符可以是数字 - 如果选中此复选框，那么密码的最后一个字符可以是数字。数字字符包括：1、2、3、4、5、6、7、8、9、0。第一个字符可以为特殊字符：如果选中此复选框，那么密码的首个字符可以是特殊字符。 支持的特殊字符为：! @ # $ % ^ &amp; <em> ( ) - _ = + \ | [ ] { } ; : / ? . &gt; &lt; . 最后字符可以为特殊字符：如果选中此复选框，那么密码的最后一个字符可以是特殊字符。 支持的特殊字符为：! @ # $ % ^ &amp; </em> ( ) - _ = + \ | [ ] { } ; : / ? . &gt; &lt; . </p><p><strong>创建排除的密码列表：</strong></p><p>在“排除的密码列表”部分中，单击新建行。在密码字段中，输入要在系统中禁止使用的密码</p><p><strong>删除排除的密码：</strong></p><p>在“排除的密码列表”部分中，单击要删除的已排除密码旁边的标记为待删除。</p><p>参考：<a href="https://www.ibm.com/support/knowledgecenter/zh/SSFGJ4_7.6.0/com.ibm.mbs.doc/mbs_common/t_set_password_reqs.html" target="_blank" rel="external">https://www.ibm.com/support/knowledgecenter/zh/SSFGJ4_7.6.0/com.ibm.mbs.doc/mbs_common/t_set_password_reqs.html</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;产品设计：密码设置要求&quot;&gt;&lt;a href=&quot;#产品设计：密码设置要求&quot; class=&quot;headerlink&quot; title=&quot;产品设计：密码设置要求&quot;&gt;&lt;/a&gt;产品设计：密码设置要求&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;选项&lt;/th&gt;
-&lt;th&gt;
+        &lt;h1 id=&quot;产品设计：密码设置要求&quot;&gt;&lt;a href=&quot;#产品设计：密码设置要求&quot; class=&quot;headerlink&quot; title=&quot;产品设计：密码设置要求&quot;&gt;&lt;/a&gt;产品设计：密码设置要求&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;设置密码要求：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在“
       
     
     </summary>
@@ -111,11 +108,11 @@
     </summary>
     
     
-      <category term="产品流程" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B/"/>
-    
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+    
+      <category term="产品流程" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B/"/>
     
   </entry>
   
@@ -166,11 +163,11 @@
     </summary>
     
     
+      <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
+    
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
-    
-      <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
