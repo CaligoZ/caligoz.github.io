@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://caligo.cc/"/>
-  <updated>2019-03-05T07:34:28.287Z</updated>
+  <updated>2019-11-27T11:51:11.773Z</updated>
   <id>http://caligo.cc/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KANO 模型</title>
+    <link href="http://caligo.cc/2019/11/27/KANO-%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://caligo.cc/2019/11/27/KANO-模型/</id>
+    <published>2019-11-27T11:41:48.000Z</published>
+    <updated>2019-11-27T11:51:11.773Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="KANO-模型"><a href="#KANO-模型" class="headerlink" title="KANO 模型"></a>KANO 模型</h1><blockquote><p>通过 KANO 模型去判定需求的优先级</p><p>预先工作：</p><ol><li>确认产品生命时期 - 种子期、成长期、成熟期、衰退期，不同时期的业务目标是不一样的</li><li>确认用户群画像 - 了解他们的使用场景和习惯</li></ol></blockquote><p><img src="/2019/11/27/KANO-模型/image-20191127194244725.png" alt="image-20191127194244725"></p><ul><li>魅力因素：用户意想不到的，如果不提供此需求，用户满意度不会降低，但当提供此需求，用户满意度会有很大提升；</li><li>期望因素：当提供此需求，用户满意度会提升，当不提供此需求，用户满意度会降低；</li><li>必备因素：当优化此需求，用户满意度不会提升，当不提供此需求，用户满意度会大幅降低；</li><li>无差异因素：无论提供或不提供此需求，用户满意度都不会有改变，用户根本不在意；</li><li>反向因素：用户根本都没有此需求，提供后用户满意度反而会下降。</li></ul><p><img src="/2019/11/27/KANO-模型/image-20191127194307168.png" alt="image-20191127194307168"></p><p>所以，从用户的需求角度来看的话，产品率先需要满足的是必备因素，这部分功能是最基本的功能，如果不具备，用户的满意度将大幅下降。然后，则是去尽量满足用户的期望因素，这是质量的竞争性因素，提供用户喜爱的额外功能，加强用户的好感。最后，则是争取满足魅力因素，这是锦上添花的作用，可以提升用户忠诚度。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;KANO-模型&quot;&gt;&lt;a href=&quot;#KANO-模型&quot; class=&quot;headerlink&quot; title=&quot;KANO 模型&quot;&gt;&lt;/a&gt;KANO 模型&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;通过 KANO 模型去判定需求的优先级&lt;/p&gt;
+&lt;p&gt;预先工作：&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+    
+      <category term="产品思维" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>从前辈的面试分析中规划自己的成长路径</title>
@@ -162,11 +190,11 @@
     </summary>
     
     
-      <category term="产品流程" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B/"/>
+      <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
     
       <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
-      <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+      <category term="产品流程" scheme="http://caligo.cc/tags/%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B/"/>
     
   </entry>
   
@@ -190,9 +218,9 @@
     </summary>
     
     
-      <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
-    
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
+    
+      <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
       <category term="用户" scheme="http://caligo.cc/tags/%E7%94%A8%E6%88%B7/"/>
     
@@ -217,11 +245,11 @@
     </summary>
     
     
-      <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
-    
       <category term="阅读手札" scheme="http://caligo.cc/tags/%E9%98%85%E8%AF%BB%E6%89%8B%E6%9C%AD/"/>
     
       <category term="网站型产品" scheme="http://caligo.cc/tags/%E7%BD%91%E7%AB%99%E5%9E%8B%E4%BA%A7%E5%93%81/"/>
+    
+      <category term="ToB" scheme="http://caligo.cc/tags/ToB/"/>
     
   </entry>
   
